@@ -8,4 +8,44 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="std_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="SeparaterTheme" parent="Theme.AppCompat.Light">
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+
+    <style name="CardStyle" parent="std_layout">
+        <item name="cardCornerRadius">@dimen/radius</item>
+        <item name="cardElevation">@dimen/elevation</item>
+    </style>
+    <!-- Image Header -->
+    <style name="h_image" parent="std_layout">
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:src">@drawable/splash</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+    <!-- AppBar -->
+    <style name="appBar">
+        <item name="android:layout_height">@dimen/app_bar_height</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <!-- Collapsing Toolbar -->
+    <style name="CollapsingToolbarLayout">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+    <!--Toolbar -->
+    <style name="ToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:textSize">24sp</item>
+    </style>
 </resources>
