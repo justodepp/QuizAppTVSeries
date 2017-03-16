@@ -23,8 +23,7 @@
                 android:orientation="vertical">
 
                 <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    style="@style/frame_layout">
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -41,23 +40,37 @@
                         android:background="#99000000"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"
-                        android:text="Quale Serie Tv rappresenta l'immagine?"
+                        android:text="Wich Tv Serie rapresent?"
                         android:textSize="24sp"/>
 
                 </FrameLayout>
 
-                <View
-                    android:layout_marginTop="8dp"
-                    style="@style/SeparaterTheme"
-                    android:layout_width="300dp"
-                    android:layout_gravity="center"
-                    android:layout_height="1dp"/>
-
-                <TextView
-                    android:layout_margin="8dp"
+                <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="la mia prima quiz card"/>
+                    android:layout_margin="8dp">
+                    <RadioButton
+                        style="@style/radio_button"
+                        android:text="Dottor Who"
+                        android:textSize="14sp"
+                        />
+                    <RadioButton
+                        style="@style/radio_button"
+                        android:text="The Flash"
+                        android:textSize="14sp"
+                        />
+                    <RadioButton
+                        style="@style/radio_button"
+                        android:text="X-men"
+                        android:textSize="14sp"
+                        />
+                    <RadioButton
+                        style="@style/radio_button"
+                        android:text="Dexter"
+                        android:textSize="14sp"
+                        />
+                </RadioGroup>
+
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
@@ -90,23 +103,21 @@
                         android:background="#99000000"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"
-                        android:text="Quale Serie Tv rappresenta l'immagine?"
+                        android:text="What is the name of this Tv Series?"
                         android:textSize="24sp"/>
 
             </FrameLayout>
-
-                <View
-                    android:layout_marginTop="8dp"
-                    style="@style/SeparaterTheme"
-                    android:layout_width="300dp"
-                    android:layout_gravity="center"
-                    android:layout_height="1dp"/>
-
-                <TextView
+                <android.support.design.widget.TextInputLayout
                     android:layout_margin="8dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="la mia prima quiz card"/>
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Type name here" />
+                </android.support.design.widget.TextInputLayout>
+
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
@@ -139,23 +150,36 @@
                         android:background="#99000000"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"
-                        android:text="Quale Serie Tv rappresenta l'immagine?"
+                        android:text="How many season have this Tv Series?"
                         android:textSize="24sp"/>
 
                 </FrameLayout>
 
-                <View
-                    android:layout_marginTop="8dp"
-                    style="@style/SeparaterTheme"
-                    android:layout_width="300dp"
-                    android:layout_gravity="center"
-                    android:layout_height="1dp"/>
-
-                <TextView
-                    android:layout_margin="8dp"
+                <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="la mia prima quiz card"/>
+                    android:layout_margin="8dp">
+                    <RadioButton
+                        style="@style/radio_button"
+                        android:text="2"
+                        android:textSize="14sp"
+                        />
+                    <RadioButton
+                        style="@style/radio_button"
+                        android:text="7"
+                        android:textSize="14sp"
+                        />
+                    <RadioButton
+                        style="@style/radio_button"
+                        android:text="0"
+                        android:textSize="14sp"
+                        />
+                    <RadioButton
+                        style="@style/radio_button"
+                        android:text="5"
+                        android:textSize="14sp"
+                        />
+                </RadioGroup>
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
@@ -188,23 +212,37 @@
                         android:background="#99000000"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"
-                        android:text="Quale Serie Tv rappresenta l'immagine?"
+                        android:text="What's the name of this Tv Series?"
                         android:textSize="24sp"/>
 
                 </FrameLayout>
 
-                <View
-                    android:layout_marginTop="8dp"
-                    style="@style/SeparaterTheme"
-                    android:layout_width="300dp"
-                    android:layout_gravity="center"
-                    android:layout_height="1dp"/>
 
-                <TextView
-                    android:layout_margin="8dp"
+                <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="la mia prima quiz card"/>
+                    android:layout_margin="8dp">
+                    <RadioButton
+                        style="@style/radio_button"
+                        android:text="Supernatural"
+                        android:textSize="14sp"
+                        />
+                    <RadioButton
+                        style="@style/radio_button"
+                        android:text="Sense8"
+                        android:textSize="14sp"
+                        />
+                    <RadioButton
+                        style="@style/radio_button"
+                        android:text="Falling Sky"
+                        android:textSize="14sp"
+                        />
+                    <RadioButton
+                        style="@style/radio_button"
+                        android:text="Vikings"
+                        android:textSize="14sp"
+                        />
+                </RadioGroup>
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
@@ -237,23 +275,48 @@
                         android:background="#99000000"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"
-                        android:text="Quale Serie Tv rappresenta l'immagine?"
+                        android:text="In wich Tv Series appear this actor?"
                         android:textSize="24sp"/>
 
                 </FrameLayout>
 
-                <View
-                    android:layout_marginTop="8dp"
-                    style="@style/SeparaterTheme"
-                    android:layout_width="300dp"
-                    android:layout_gravity="center"
-                    android:layout_height="1dp"/>
-
-                <TextView
-                    android:layout_margin="8dp"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="la mia prima quiz card"/>
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="The Original"
+                            />
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Breaking Bad"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Better call Saul"/>
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="The 100"/>
+                    </LinearLayout>
+                </LinearLayout>
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
@@ -286,23 +349,36 @@
                         android:background="#99000000"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"
-                        android:text="Quale Serie Tv rappresenta l'immagine?"
+                        android:text="What's this Tv Series?"
                         android:textSize="24sp"/>
 
                 </FrameLayout>
 
-                <View
-                    android:layout_marginTop="8dp"
-                    style="@style/SeparaterTheme"
-                    android:layout_width="300dp"
-                    android:layout_gravity="center"
-                    android:layout_height="1dp"/>
-
-                <TextView
-                    android:layout_margin="8dp"
+                <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="la mia prima quiz card"/>
+                    android:layout_margin="8dp">
+                    <RadioButton
+                        style="@style/radio_button"
+                        android:text="Breaking Bad"
+                        android:textSize="14sp"
+                        />
+                    <RadioButton
+                        style="@style/radio_button"
+                        android:text="Flashforward"
+                        android:textSize="14sp"
+                        />
+                    <RadioButton
+                        style="@style/radio_button"
+                        android:text="The walking dead"
+                        android:textSize="14sp"
+                        />
+                    <RadioButton
+                        style="@style/radio_button"
+                        android:text="Stranger Things"
+                        android:textSize="14sp"
+                        />
+                </RadioGroup>
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
@@ -335,23 +411,36 @@
                         android:background="#99000000"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"
-                        android:text="Quale Serie Tv rappresenta l'immagine?"
+                        android:text="You know this Tv Series?"
                         android:textSize="24sp"/>
 
                 </FrameLayout>
 
-                <View
-                    android:layout_marginTop="8dp"
-                    style="@style/SeparaterTheme"
-                    android:layout_width="300dp"
-                    android:layout_gravity="center"
-                    android:layout_height="1dp"/>
-
-                <TextView
-                    android:layout_margin="8dp"
+                <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="la mia prima quiz card"/>
+                    android:layout_margin="8dp">
+                    <RadioButton
+                        style="@style/radio_button"
+                        android:text="Legion"
+                        android:textSize="14sp"
+                        />
+                    <RadioButton
+                        style="@style/radio_button"
+                        android:text="Breaking Bad"
+                        android:textSize="14sp"
+                        />
+                    <RadioButton
+                        style="@style/radio_button"
+                        android:text="Last man on earth"
+                        android:textSize="14sp"
+                        />
+                    <RadioButton
+                        style="@style/radio_button"
+                        android:text="NCIS"
+                        android:textSize="14sp"
+                        />
+                </RadioGroup>
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
@@ -384,23 +473,47 @@
                         android:background="#99000000"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"
-                        android:text="Quale Serie Tv rappresenta l'immagine?"
+                        android:text="In wich Tv Series appear this actor?"
                         android:textSize="24sp"/>
 
                 </FrameLayout>
-
-                <View
-                    android:layout_marginTop="8dp"
-                    style="@style/SeparaterTheme"
-                    android:layout_width="300dp"
-                    android:layout_gravity="center"
-                    android:layout_height="1dp"/>
-
-                <TextView
-                    android:layout_margin="8dp"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="la mia prima quiz card"/>
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Jessica Jones"
+                            />
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Luke Cage"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Ninja Turtle"/>
+                        <CheckBox
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Griffin"/>
+                    </LinearLayout>
+                </LinearLayout>
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
@@ -433,23 +546,20 @@
                         android:background="#99000000"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"
-                        android:text="Quale Serie Tv rappresenta l'immagine?"
+                        android:text="How many episod for season have this Tv Series?"
                         android:textSize="24sp"/>
 
                 </FrameLayout>
 
-                <View
-                    android:layout_marginTop="8dp"
-                    style="@style/SeparaterTheme"
-                    android:layout_width="300dp"
-                    android:layout_gravity="center"
-                    android:layout_height="1dp"/>
-
-                <TextView
+                <android.support.design.widget.TextInputLayout
                     android:layout_margin="8dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="la mia prima quiz card"/>
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Type number here" />
+                </android.support.design.widget.TextInputLayout>
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
@@ -482,30 +592,38 @@
                         android:background="#99000000"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"
-                        android:text="Quale Serie Tv rappresenta l'immagine?"
+                        android:text="What's the name of this Tv Series?"
                         android:textSize="24sp"/>
 
                 </FrameLayout>
 
-                <View
-                    android:layout_marginTop="8dp"
-                    style="@style/SeparaterTheme"
-                    android:layout_width="300dp"
-                    android:layout_gravity="center"
-                    android:layout_height="1dp"/>
-
-                <TextView
-                    android:layout_margin="8dp"
+                <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="la mia prima quiz card"/>
+                    android:layout_margin="8dp">
+                    <RadioButton
+                        style="@style/radio_button"
+                        android:text="Breaking Bad"
+                        android:textSize="14sp"
+                        />
+                    <RadioButton
+                        style="@style/radio_button"
+                        android:text="Flashforward"
+                        android:textSize="14sp"
+                        />
+                    <RadioButton
+                        style="@style/radio_button"
+                        android:text="The walking dead"
+                        android:textSize="14sp"
+                        />
+                    <RadioButton
+                        style="@style/radio_button"
+                        android:text="iZombie"
+                        android:textSize="14sp"
+                        />
+                </RadioGroup>
             </LinearLayout>
         </android.support.v7.widget.CardView>
-
-        <android.support.v7.widget.AppCompatButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="submit"/>
 
     </LinearLayout>
 
