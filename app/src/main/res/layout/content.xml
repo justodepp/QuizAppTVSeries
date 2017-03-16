@@ -22,7 +22,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <RelativeLayout
+                <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
@@ -32,21 +32,19 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/dexter"
                         android:layout_gravity="center"
-                        android:adjustViewBounds="true"
-                        android:alpha=".8"/>
+                        android:adjustViewBounds="true"/>
                     <TextView
-                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginRight="8dp"
-                        android:layout_marginBottom="8dp"
+                        android:padding="8dp"
+                        android:background="#99000000"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"
                         android:text="Quale Serie Tv rappresenta l'immagine?"
                         android:textSize="24sp"/>
 
-                </RelativeLayout>
+                </FrameLayout>
 
                 <View
                     android:layout_marginTop="8dp"
@@ -73,7 +71,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <RelativeLayout
+                <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <ImageView
@@ -82,22 +80,20 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/daredevil"
                         android:layout_gravity="center"
-                        android:adjustViewBounds="true"
-                        android:alpha=".8"/>
+                        android:adjustViewBounds="true"/>
 
                     <TextView
-                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginRight="8dp"
-                        android:layout_marginBottom="8dp"
+                        android:padding="8dp"
+                        android:background="#99000000"
                         android:textStyle="bold"
                         android:textColor="@android:color/white"
                         android:text="Quale Serie Tv rappresenta l'immagine?"
                         android:textSize="24sp"/>
 
-            </RelativeLayout>
+            </FrameLayout>
 
                 <View
                     android:layout_marginTop="8dp"
@@ -113,6 +109,403 @@
                     android:text="la mia prima quiz card"/>
             </LinearLayout>
         </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            style="@style/CardStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/arrow"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"/>
+
+                    <TextView
+                        android:layout_gravity="bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:background="#99000000"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:text="Quale Serie Tv rappresenta l'immagine?"
+                        android:textSize="24sp"/>
+
+                </FrameLayout>
+
+                <View
+                    android:layout_marginTop="8dp"
+                    style="@style/SeparaterTheme"
+                    android:layout_width="300dp"
+                    android:layout_gravity="center"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="la mia prima quiz card"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            style="@style/CardStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/sense8"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"/>
+
+                    <TextView
+                        android:layout_gravity="bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:background="#99000000"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:text="Quale Serie Tv rappresenta l'immagine?"
+                        android:textSize="24sp"/>
+
+                </FrameLayout>
+
+                <View
+                    android:layout_marginTop="8dp"
+                    style="@style/SeparaterTheme"
+                    android:layout_width="300dp"
+                    android:layout_gravity="center"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="la mia prima quiz card"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            style="@style/CardStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/better_call_saul"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"/>
+
+                    <TextView
+                        android:layout_gravity="bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:background="#99000000"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:text="Quale Serie Tv rappresenta l'immagine?"
+                        android:textSize="24sp"/>
+
+                </FrameLayout>
+
+                <View
+                    android:layout_marginTop="8dp"
+                    style="@style/SeparaterTheme"
+                    android:layout_width="300dp"
+                    android:layout_gravity="center"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="la mia prima quiz card"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            style="@style/CardStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/stranger_things"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"/>
+
+                    <TextView
+                        android:layout_gravity="bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:background="#99000000"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:text="Quale Serie Tv rappresenta l'immagine?"
+                        android:textSize="24sp"/>
+
+                </FrameLayout>
+
+                <View
+                    android:layout_marginTop="8dp"
+                    style="@style/SeparaterTheme"
+                    android:layout_width="300dp"
+                    android:layout_gravity="center"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="la mia prima quiz card"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            style="@style/CardStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/breaking_bad"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"/>
+
+                    <TextView
+                        android:layout_gravity="bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:background="#99000000"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:text="Quale Serie Tv rappresenta l'immagine?"
+                        android:textSize="24sp"/>
+
+                </FrameLayout>
+
+                <View
+                    android:layout_marginTop="8dp"
+                    style="@style/SeparaterTheme"
+                    android:layout_width="300dp"
+                    android:layout_gravity="center"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="la mia prima quiz card"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            style="@style/CardStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/luke_cage"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"/>
+
+                    <TextView
+                        android:layout_gravity="bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:background="#99000000"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:text="Quale Serie Tv rappresenta l'immagine?"
+                        android:textSize="24sp"/>
+
+                </FrameLayout>
+
+                <View
+                    android:layout_marginTop="8dp"
+                    style="@style/SeparaterTheme"
+                    android:layout_width="300dp"
+                    android:layout_gravity="center"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="la mia prima quiz card"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            style="@style/CardStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/sherlock"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"/>
+
+                    <TextView
+                        android:layout_gravity="bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:background="#99000000"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:text="Quale Serie Tv rappresenta l'immagine?"
+                        android:textSize="24sp"/>
+
+                </FrameLayout>
+
+                <View
+                    android:layout_marginTop="8dp"
+                    style="@style/SeparaterTheme"
+                    android:layout_width="300dp"
+                    android:layout_gravity="center"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="la mia prima quiz card"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            style="@style/CardStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/the_walking_dead"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"/>
+
+                    <TextView
+                        android:layout_gravity="bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:background="#99000000"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:text="Quale Serie Tv rappresenta l'immagine?"
+                        android:textSize="24sp"/>
+
+                </FrameLayout>
+
+                <View
+                    android:layout_marginTop="8dp"
+                    style="@style/SeparaterTheme"
+                    android:layout_width="300dp"
+                    android:layout_gravity="center"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="la mia prima quiz card"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="submit"/>
 
     </LinearLayout>
 
