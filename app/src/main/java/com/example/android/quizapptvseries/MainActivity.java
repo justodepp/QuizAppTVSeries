@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     CollapsingToolbarLayout collapsingToolbar;
     Toolbar toolbar;
     ImageView first_ImageView;
+    String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         alert = new CustomDialog();
         alert.showDialog(MainActivity.this);
-
+        name = alert.getName();
         setActionOnScrollUp();
 
         first_ImageView = (ImageView) findViewById(R.id.imageView);

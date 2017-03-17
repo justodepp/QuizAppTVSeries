@@ -49,4 +49,8 @@ public class CustomDialog extends Activity{
         lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
         window.setAttributes(lp);
     }
+
+    public String getName() {
+        return name;
+    }
 }
