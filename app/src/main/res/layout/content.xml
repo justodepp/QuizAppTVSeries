@@ -57,24 +57,24 @@
         <android.support.v7.widget.CardView
             style="@style/CardStyle"
             android:layout_marginTop="@dimen/card_margin_top">
-            <LinearLayout
-                style="@style/linear_v" >
 
-                <FrameLayout
-                    style="@style/frame_layout">
+            <LinearLayout style="@style/linear_v">
+
+                <FrameLayout style="@style/frame_layout">
+
                     <ImageView
                         style="@style/imageView_quizCard"
-                        android:src="@drawable/daredevil"/>
+                        android:src="@drawable/daredevil" />
 
                     <TextView
                         style="@style/textView_quizCard"
-                        android:text="@string/which"/>
+                        android:text="@string/which" />
 
                 </FrameLayout>
 
                 <android.support.design.widget.TextInputLayout
-                    android:layout_margin="@dimen/margin_radio"
-                    style="@style/std_layout">
+                    style="@style/std_layout"
+                    android:layout_margin="@dimen/margin_radio">
 
                     <EditText
                         style="@style/std_layout"

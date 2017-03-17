@@ -46,6 +46,12 @@
             <item name="android:layout_height">?attr/actionBarSize</item>
             <item name="android:textSize">@dimen/toolbar_textSize</item>
         </style>
+    <!-- DIALOG -->
+        <style name="btn_dialog" parent="std_layout">
+            <item name="android:background">@android:color/white</item>
+            <item name="android:textSize">@dimen/text_question_size</item>
+            <item name="android:text">@string/btn_name</item>
+        </style>
 
     <!-- CONTENT -->
         <style name="frame_layout" parent="std_layout">

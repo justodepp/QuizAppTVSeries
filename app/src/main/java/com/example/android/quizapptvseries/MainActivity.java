@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import com.squareup.picasso.Picasso;
 
 public class MainActivity extends AppCompatActivity {
+    CustomDialog alert;
     CollapsingToolbarLayout collapsingToolbar;
     Toolbar toolbar;
     ImageView first_ImageView;
@@ -18,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        alert = new CustomDialog();
+        alert.showDialog(MainActivity.this);
 
         setActionOnScrollUp();
 

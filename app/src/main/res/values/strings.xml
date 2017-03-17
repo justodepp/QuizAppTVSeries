@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">QuizApp TV Series</string>
+    <string name="who">Who are you?</string>
+    <string name="btn_name">submit</string>
     <!-- Question -->
     <string name="which">Which Tv Series is this?</string>
     <string name="whats">What\'s the name of this Tv Series?</string>
@@ -36,4 +38,5 @@
     <string name="s7">7</string>
     <string name="hint_name">Type name here</string>
     <string name="hint_number">Type number here</string>
+    <string name="hint_who">Your name here</string>
 </resources>
