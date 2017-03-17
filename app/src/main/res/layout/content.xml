@@ -35,19 +35,19 @@
                     android:layout_margin="@dimen/margin_radio">
                     <RadioButton
                         style="@style/radio_button"
-                        android:text="Dottor Who"
+                        android:text="@string/dw"
                         />
                     <RadioButton
                         style="@style/radio_button"
-                        android:text="The Flash"
+                        android:text="@string/tf"
                         />
                     <RadioButton
                         style="@style/radio_button"
-                        android:text="X-men"
+                        android:text="@string/xm"
                         />
                     <RadioButton
                         style="@style/radio_button"
-                        android:text="Dexter"
+                        android:text="@string/dx"
                         />
                 </RadioGroup>
 
@@ -107,19 +107,19 @@
                     android:layout_margin="@dimen/margin_radio">
                     <RadioButton
                         style="@style/radio_button"
-                        android:text="2"
+                        android:text="@string/s2"
                         />
                     <RadioButton
                         style="@style/radio_button"
-                        android:text="7"
+                        android:text="@string/s7"
                         />
                     <RadioButton
                         style="@style/radio_button"
-                        android:text="3"
+                        android:text="@string/s3"
                         />
                     <RadioButton
                         style="@style/radio_button"
-                        android:text="5"
+                        android:text="@string/s5"
                         />
                 </RadioGroup>
             </LinearLayout>
@@ -139,7 +139,7 @@
 
                     <TextView
                         style="@style/textView_quizCard"
-                        android:text="What's the name of this Tv Series?"/>
+                        android:text="@string/whats"/>
 
                 </FrameLayout>
 
@@ -149,19 +149,19 @@
                     android:layout_margin="@dimen/margin_radio">
                     <RadioButton
                         style="@style/radio_button"
-                        android:text="Supernatural"
+                        android:text="@string/sp"
                         />
                     <RadioButton
                         style="@style/radio_button"
-                        android:text="Sense8"
+                        android:text="@string/s8"
                         />
                     <RadioButton
                         style="@style/radio_button"
-                        android:text="Falling Sky"
+                        android:text="@string/fs"
                         />
                     <RadioButton
                         style="@style/radio_button"
-                        android:text="Vikings"
+                        android:text="@string/v"
                         />
                 </RadioGroup>
             </LinearLayout>
@@ -181,7 +181,7 @@
 
                     <TextView
                         style="@style/textView_quizCard"
-                        android:text="In wich Tv Series appear this actor?"/>
+                        android:text="@string/actor"/>
 
                 </FrameLayout>
 
@@ -193,21 +193,21 @@
                         android:orientation="horizontal">
                         <CheckBox
                             style="@style/checkBox"
-                            android:text="The Original"
+                            android:text="@string/to"
                             />
                         <CheckBox
                             style="@style/checkBox"
-                            android:text="Breaking Bad"/>
+                            android:text="@string/bb"/>
                     </LinearLayout>
                     <LinearLayout
                         style="@style/std_layout"
                         android:orientation="horizontal">
                         <CheckBox
                             style="@style/checkBox"
-                            android:text="Better call Saul"/>
+                            android:text="@string/bcs"/>
                         <CheckBox
                             style="@style/checkBox"
-                            android:text="The 100"/>
+                            android:text="@string/t100"/>
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -227,7 +227,7 @@
 
                     <TextView
                         style="@style/textView_quizCard"
-                        android:text="What's this Tv Series?"/>
+                        android:text="@string/which"/>
 
                 </FrameLayout>
 
@@ -236,19 +236,19 @@
                     android:layout_margin="@dimen/margin_radio">
                     <RadioButton
                         style="@style/radio_button"
-                        android:text="Breaking Bad"
+                        android:text="@string/bb"
                         />
                     <RadioButton
                         style="@style/radio_button"
-                        android:text="Flashforward"
+                        android:text="@string/ff"
                         />
                     <RadioButton
                         style="@style/radio_button"
-                        android:text="The walking dead"
+                        android:text="@string/twd"
                         />
                     <RadioButton
                         style="@style/radio_button"
-                        android:text="Stranger Things"
+                        android:text="@string/st"
                         />
                 </RadioGroup>
             </LinearLayout>
@@ -268,7 +268,7 @@
 
                     <TextView
                         style="@style/textView_quizCard"
-                        android:text="What's the name of this Tv Series?"/>
+                        android:text="@string/whats"/>
 
                 </FrameLayout>
 
@@ -277,19 +277,19 @@
                     android:layout_margin="@dimen/margin_radio">
                     <RadioButton
                         style="@style/radio_button"
-                        android:text="Legion"
+                        android:text="@string/l"
                         />
                     <RadioButton
                         style="@style/radio_button"
-                        android:text="Breaking Bad"
+                        android:text="@string/bb"
                         />
                     <RadioButton
                         style="@style/radio_button"
-                        android:text="Last man on earth"
+                        android:text="@string/lme"
                         />
                     <RadioButton
                         style="@style/radio_button"
-                        android:text="NCIS"
+                        android:text="@string/ncis"
                         />
                 </RadioGroup>
             </LinearLayout>
@@ -309,7 +309,7 @@
 
                     <TextView
                         style="@style/textView_quizCard"
-                        android:text="In wich Tv Series appear this actor?"/>
+                        android:text="@string/actor"/>
 
                 </FrameLayout>
                 <LinearLayout
@@ -320,21 +320,21 @@
                         android:orientation="horizontal">
                         <CheckBox
                             style="@style/checkBox"
-                            android:text="Jessica Jones"
+                            android:text="@string/jj"
                             />
                         <CheckBox
                             style="@style/checkBox"
-                            android:text="Luke Cage"/>
+                            android:text="@string/lc"/>
                     </LinearLayout>
                     <LinearLayout
                         style="@style/std_layout"
                         android:orientation="horizontal">
                         <CheckBox
                             style="@style/checkBox"
-                            android:text="Ninja Turtle"/>
+                            android:text="@string/nt"/>
                         <CheckBox
                             style="@style/checkBox"
-                            android:text="Griffin"/>
+                            android:text="@string/g"/>
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -354,7 +354,7 @@
 
                     <TextView
                         style="@style/textView_quizCard"
-                        android:text="How many episod for season have this Tv Series?"/>
+                        android:text="@string/episode"/>
 
                 </FrameLayout>
 
@@ -382,7 +382,7 @@
 
                     <TextView
                         style="@style/textView_quizCard"
-                        android:text="What's the name of this Tv Series?"/>
+                        android:text="@string/whats"/>
 
                 </FrameLayout>
 
@@ -391,19 +391,19 @@
                     android:layout_margin="@dimen/margin_radio">
                     <RadioButton
                         style="@style/radio_button"
-                        android:text="Breaking Bad"
+                        android:text="@string/bb"
                         />
                     <RadioButton
                         style="@style/radio_button"
-                        android:text="Flashforward"
+                        android:text="@string/ff"
                         />
                     <RadioButton
                         style="@style/radio_button"
-                        android:text="The walking dead"
+                        android:text="@string/twd"
                         />
                     <RadioButton
                         style="@style/radio_button"
-                        android:text="iZombie"
+                        android:text="@string/iz"
                         />
                 </RadioGroup>
             </LinearLayout>

@@ -5,6 +5,7 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="app_bar_height">180dp</dimen>
 
+    <dimen name="toolbar_textSize">24sp</dimen>
     <!-- Card -->
     <dimen name="elevation">2dp</dimen>
     <dimen name="radius">2dp</dimen>

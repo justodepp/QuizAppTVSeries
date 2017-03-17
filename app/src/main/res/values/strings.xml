@@ -1,7 +1,39 @@
 <resources>
     <string name="app_name">QuizApp TV Series</string>
+    <!-- Question -->
     <string name="which">Which Tv Series is this?</string>
+    <string name="whats">What\'s the name of this Tv Series?</string>
+    <string name="season_number">How many season have this Tv Series?</string>
+    <string name="episode">How many episode for season have this Tv Series?</string>
+    <string name="actor">In which Tv Series appear this actor?</string>
+    <!-- Answer -->
+    <string name="bb">Breaking Bad</string>
+    <string name="twd">The Walking Dead</string>
+    <string name="iz">iZombie</string>
+    <string name="ff">Flashforward</string>
+    <string name="jj">Jessica Jones</string>
+    <string name="nt">Ninja Turtles</string>
+    <string name="lc">Luke Cage</string>
+    <string name="g">Griffin</string>
+    <string name="ncis">NCIS</string>
+    <string name="l">Legion</string>
+    <string name="lme">Last man on earth</string>
+    <string name="st">Stranger Things</string>
+    <string name="bcs">Better Call Saul</string>
+    <string name="t100">The 100</string>
+    <string name="to">The Original</string>
+    <string name="sp">Supernatural</string>
+    <string name="s8">Sense8</string>
+    <string name="fs">Falling Sky</string>
+    <string name="v">Vikings</string>
+    <string name="tf">The Flash</string>
+    <string name="dx">Dexter</string>
+    <string name="xm">X-men</string>
+    <string name="dw">Dottor Who</string>
+    <string name="s2">2</string>
+    <string name="s3">3</string>
+    <string name="s5">5</string>
+    <string name="s7">7</string>
     <string name="hint_name">Type name here</string>
     <string name="hint_number">Type number here</string>
-    <string name="season_number">How many season have this Tv Series?</string>
 </resources>
