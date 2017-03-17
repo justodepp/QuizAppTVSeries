@@ -12,45 +12,78 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <!-- GENERAL -->
     <style name="std_layout">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
-    <style name="frame_layout" parent="std_layout">
-        <item name="cardElevation">@dimen/elevation</item>
+
+    <style name="linear_v" parent="std_layout">
+        <item name="android:orientation">vertical</item>
     </style>
-    <style name="CardStyle" parent="std_layout">
-        <item name="cardCornerRadius">@dimen/radius</item>
-        <item name="cardElevation">@dimen/elevation</item>
-    </style>
-    <!-- Image Header -->
-    <style name="h_image" parent="std_layout">
-        <item name="android:scaleType">centerCrop</item>
-        <item name="android:src">@drawable/splash</item>
-        <item name="android:fitsSystemWindows">true</item>
-    </style>
-    <!-- AppBar -->
-    <style name="appBar">
-        <item name="android:layout_height">@dimen/app_bar_height</item>
-        <item name="android:layout_width">match_parent</item>
-    </style>
-    <!-- Collapsing Toolbar -->
-    <style name="CollapsingToolbarLayout">
-        <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:fitsSystemWindows">true</item>
-    </style>
-    <!--Toolbar -->
-    <style name="ToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">?attr/actionBarSize</item>
-        <item name="android:textSize">24sp</item>
-    </style>
-    <!-- Radio Button-->
-    <style name="radio_button">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:focusableInTouchMode">false</item>
-        <item name="android:focusable">false</item>
-    </style>
+
+    <!-- SPLASH SCREEN -->
+        <!-- Image Header -->
+        <style name="h_image" parent="std_layout">
+            <item name="android:scaleType">centerCrop</item>
+            <item name="android:src">@drawable/splash</item>
+            <item name="android:fitsSystemWindows">true</item>
+        </style>
+        <!-- AppBar -->
+        <style name="appBar">
+            <item name="android:layout_height">@dimen/app_bar_height</item>
+            <item name="android:layout_width">match_parent</item>
+        </style>
+        <!-- Collapsing Toolbar -->
+        <style name="CollapsingToolbarLayout">
+            <item name="android:layout_height">match_parent</item>
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:fitsSystemWindows">true</item>
+        </style>
+        <!--Toolbar -->
+        <style name="ToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">?attr/actionBarSize</item>
+            <item name="android:textSize">24sp</item>
+        </style>
+
+    <!-- CONTENT -->
+        <style name="frame_layout" parent="std_layout">
+            <item name="cardElevation">@dimen/elevation</item>
+        </style>
+        <style name="CardStyle" parent="std_layout">
+            <item name="cardCornerRadius">@dimen/radius</item>
+            <item name="cardElevation">@dimen/elevation</item>
+        </style>
+
+        <!-- ImageView QuizCard -->
+        <style name="imageView_quizCard">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">@dimen/height</item>
+            <item name="android:scaleType">centerCrop</item>
+            <item name="android:adjustViewBounds">true</item>
+        </style>
+        <!-- TextView QuizCard -->
+        <style name="textView_quizCard" parent="std_layout">
+            <item name="android:layout_gravity">bottom</item>
+            <item name="android:padding">@dimen/text_question_padding</item>
+            <item name="android:textStyle">bold</item>
+            <item name="android:textColor">@android:color/white</item>
+            <item name="android:textSize">@dimen/text_question_size</item>
+            <item name="android:background">@color/backgroundQuestion</item>
+        </style>
+        <!-- Radio Button-->
+        <style name="radio_button">
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:focusableInTouchMode">false</item>
+            <item name="android:focusable">false</item>
+            <item name="android:textSize">@dimen/text_radioButton_size</item>
+        </style>
+        <!-- CheckBox -->
+        <style name="checkBox">
+            <item name="android:layout_width">0dp</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:layout_weight">1</item>
+        </style>
 </resources>

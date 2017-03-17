@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">QuizApp TV Series</string>
+    <string name="which">Which Tv Series is this?</string>
+    <string name="hint_name">Type name here</string>
+    <string name="hint_number">Type number here</string>
+    <string name="season_number">How many season have this Tv Series?</string>
 </resources>

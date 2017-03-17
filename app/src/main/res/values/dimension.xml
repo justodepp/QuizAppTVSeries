@@ -11,20 +11,14 @@
     <!-- First Card -->
     <dimen name="c_htop">16dp</dimen>
     <dimen name="c_hbottom">8dp</dimen>
-    <!-- Team Name -->
-    <dimen name="w_padding">16dp</dimen>
-    <dimen name="w_size">45sp</dimen>
-    <!-- Team Name -->
-    <dimen name="tn_p">16dp</dimen>
-    <dimen name="tn_size">20sp</dimen>
-    <!-- Board -->
-    <dimen name="bp_size">16sp</dimen>
-    <!-- Point -->
-    <dimen name="p_width">0dp</dimen>
-    <dimen name="p_padding_b">24dp</dimen>
-    <dimen name="p_text_size">56sp</dimen>
-    <!-- View -->
-    <dimen name="v_m">16dp</dimen>
+    <dimen name="card_margin_top">8dp</dimen>
+    <!-- Image -->
+    <dimen name="height">150dp</dimen>
+    <!-- Text Question -->
+    <dimen name="text_question_size">24sp</dimen>
+    <dimen name="text_question_padding">8dp</dimen>
+    <dimen name="text_radioButton_size">14sp</dimen>
+    <dimen name="margin_radio">8dp</dimen>
     <!-- Dialog -->
     <dimen name="w_w">0dp</dimen>
     <dimen name="w_h">34dp</dimen>
