@@ -409,6 +409,13 @@
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_submitQuestion"
+            style="@style/btn_dialog"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            />
+
     </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>

@@ -53,6 +53,17 @@
             <item name="android:text">@string/btn_name</item>
         </style>
 
+    <!-- RESULT -->
+        <style name="txt_result" parent="std_layout">
+            <item name="android:textSize">@dimen/t_size</item>
+            <item name="android:text">@string/btn_grading</item>
+        </style>
+        <style name="btn_result" parent="std_layout">
+            <item name="android:background">@android:color/white</item>
+            <item name="android:textSize">@dimen/text_question_size</item>
+            <item name="android:text">@string/btn_grading</item>
+        </style>
+
     <!-- CONTENT -->
         <style name="frame_layout" parent="std_layout">
             <item name="cardElevation">@dimen/elevation</item>

@@ -2,12 +2,15 @@
     <string name="app_name">QuizApp TV Series</string>
     <string name="who">Who are you?</string>
     <string name="btn_name">submit</string>
+    <string name="btn_grading">grading</string>
     <!-- Question -->
     <string name="which">Which Tv Series is this?</string>
     <string name="whats">What\'s the name of this Tv Series?</string>
     <string name="season_number">How many season have this Tv Series?</string>
     <string name="episode">How many episode for season have this Tv Series?</string>
     <string name="actor">In which Tv Series appear this actor?</string>
+    <!-- Result -->
+    <string name="text_result">Contratulation on finish this quizz!\n\nPress the button below to see your result..</string>
     <!-- Answer -->
     <string name="bb">Breaking Bad</string>
     <string name="twd">The Walking Dead</string>

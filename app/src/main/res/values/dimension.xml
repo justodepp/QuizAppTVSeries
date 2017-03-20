@@ -24,4 +24,6 @@
     <dimen name="w_w">0dp</dimen>
     <dimen name="w_h">34dp</dimen>
     <dimen name="w_t">34sp</dimen>
+    <!-- Result -->
+    <dimen name="t_size">24sp</dimen>
 </resources>
