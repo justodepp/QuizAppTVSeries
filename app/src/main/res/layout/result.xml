@@ -7,18 +7,22 @@
         style="@style/std_layout"
         android:orientation="vertical"
         android:layout_centerVertical="true">
+
         <TextView
-            style="@style/txt_result"
+            style="@style/txt_result1"
             android:layout_margin="8dp"
             android:gravity="center"
-            android:text="@string/text_result"/>
+            android:text="@string/text_result1"/>
+        <TextView
+            style="@style/txt_result2"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:text="@string/text_result2"/>
 
         <android.support.v7.widget.AppCompatButton
-            android:layout_marginTop="8dp"
             android:id="@+id/btn_submitName"
             style="@style/btn_result"
+            android:onClick="calculateResult"
             />
-
     </LinearLayout>
-
 </RelativeLayout>

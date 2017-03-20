@@ -54,14 +54,39 @@
         </style>
 
     <!-- RESULT -->
-        <style name="txt_result" parent="std_layout">
-            <item name="android:textSize">@dimen/t_size</item>
+        <style name="text_result" parent="std_layout">
+            <item name="android:layout_marginRight">8dp</item>
+            <item name="android:layout_marginTop">16dp</item>
+            <item name="android:layout_marginLeft">8dp</item>
+            <item name="android:textSize">24sp</item>
+            <item name="android:textStyle">bold</item>
+        </style>
+        <style name="txt_result1" parent="std_layout">
+            <item name="android:textSize">@dimen/t_size1</item>
+            <item name="android:text">@string/btn_grading</item>
+        </style>
+        <style name="txt_result2" parent="std_layout">
+            <item name="android:textSize">@dimen/t_size2</item>
             <item name="android:text">@string/btn_grading</item>
         </style>
         <style name="btn_result" parent="std_layout">
-            <item name="android:background">@android:color/white</item>
             <item name="android:textSize">@dimen/text_question_size</item>
             <item name="android:text">@string/btn_grading</item>
+        </style>
+    <!-- CHECK -->
+        <style name="text_row">
+            <item name="android:layout_weight">1</item>
+            <item name="android:textSize">16sp</item>
+            <item name="android:paddingLeft">8dp</item>
+        </style>
+        <style name="table_header">
+            <item name="android:layout_weight">1</item>
+            <item name="android:textSize">20sp</item>
+        </style>
+        <style name="table_row">
+            <item name="android:layout_marginTop">8dp</item>
+            <item name="android:layout_marginLeft">8dp</item>
+            <item name="android:layout_marginRight">8dp</item>
         </style>
 
     <!-- CONTENT -->

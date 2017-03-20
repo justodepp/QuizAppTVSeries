@@ -31,21 +31,27 @@
                 </FrameLayout>
 
                 <RadioGroup
+                    android:id="@+id/radio_groupQ1"
                     style="@style/std_layout"
-                    android:layout_margin="@dimen/margin_radio">
+                    android:layout_margin="@dimen/margin_radio"
+                    android:onClick="checkQ1">
                     <RadioButton
+                        android:id="@+id/radio1Q1"
                         style="@style/radio_button"
                         android:text="@string/dw"
                         />
                     <RadioButton
+                        android:id="@+id/radio2Q1"
                         style="@style/radio_button"
                         android:text="@string/tf"
                         />
                     <RadioButton
+                        android:id="@+id/radio3Q1"
                         style="@style/radio_button"
                         android:text="@string/xm"
                         />
                     <RadioButton
+                        android:id="@+id/radio4Q1"
                         style="@style/radio_button"
                         android:text="@string/dx"
                         />
@@ -77,6 +83,8 @@
                     android:layout_margin="@dimen/margin_radio">
 
                     <EditText
+                        android:onClick="checkQ2"
+                        android:id="@+id/editTextQ2"
                         style="@style/std_layout"
                         android:hint="@string/hint_name" />
                 </android.support.design.widget.TextInputLayout>
@@ -103,21 +111,27 @@
                 </FrameLayout>
 
                 <RadioGroup
+                    android:onClick="checkQ3"
+                    android:id="@+id/radio_groupQ3"
                     style="@style/std_layout"
                     android:layout_margin="@dimen/margin_radio">
                     <RadioButton
+                        android:id="@+id/radio1Q3"
                         style="@style/radio_button"
                         android:text="@string/s2"
                         />
                     <RadioButton
+                        android:id="@+id/radio2Q3"
                         style="@style/radio_button"
                         android:text="@string/s7"
                         />
                     <RadioButton
+                        android:id="@+id/radio3Q3"
                         style="@style/radio_button"
                         android:text="@string/s3"
                         />
                     <RadioButton
+                        android:id="@+id/radio4Q3"
                         style="@style/radio_button"
                         android:text="@string/s5"
                         />
@@ -145,21 +159,27 @@
 
 
                 <RadioGroup
+                    android:onClick="checkQ4"
+                    android:id="@+id/radio_groupQ4"
                     style="@style/std_layout"
                     android:layout_margin="@dimen/margin_radio">
                     <RadioButton
+                        android:id="@+id/radio1Q4"
                         style="@style/radio_button"
                         android:text="@string/sp"
                         />
                     <RadioButton
+                        android:id="@+id/radio2Q4"
                         style="@style/radio_button"
                         android:text="@string/s8"
                         />
                     <RadioButton
+                        android:id="@+id/radio3Q4"
                         style="@style/radio_button"
                         android:text="@string/fs"
                         />
                     <RadioButton
+                        android:id="@+id/radio4Q4"
                         style="@style/radio_button"
                         android:text="@string/v"
                         />
@@ -192,10 +212,13 @@
                         style="@style/std_layout"
                         android:orientation="horizontal">
                         <CheckBox
+                            android:id="@+id/checkbox1Q5"
                             style="@style/checkBox"
                             android:text="@string/to"
                             />
                         <CheckBox
+                            android:onClick="checkQ5"
+                            android:id="@+id/checkbox2Q5"
                             style="@style/checkBox"
                             android:text="@string/bb"/>
                     </LinearLayout>
@@ -203,9 +226,12 @@
                         style="@style/std_layout"
                         android:orientation="horizontal">
                         <CheckBox
+                            android:onClick="checkQ5"
+                            android:id="@+id/checkbox3Q5"
                             style="@style/checkBox"
                             android:text="@string/bcs"/>
                         <CheckBox
+                            android:id="@+id/checkbox4Q5"
                             style="@style/checkBox"
                             android:text="@string/t100"/>
                     </LinearLayout>
@@ -232,21 +258,27 @@
                 </FrameLayout>
 
                 <RadioGroup
+                    android:id="@+id/radio_groupQ6"
                     style="@style/std_layout"
-                    android:layout_margin="@dimen/margin_radio">
+                    android:layout_margin="@dimen/margin_radio"
+                    android:onClick="checkQ6">
                     <RadioButton
+                        android:id="@+id/radio1Q6"
                         style="@style/radio_button"
                         android:text="@string/bb"
                         />
                     <RadioButton
+                        android:id="@+id/radio2Q6"
                         style="@style/radio_button"
                         android:text="@string/ff"
                         />
                     <RadioButton
+                        android:id="@+id/radio3Q6"
                         style="@style/radio_button"
                         android:text="@string/twd"
                         />
                     <RadioButton
+                        android:id="@+id/radio4Q6"
                         style="@style/radio_button"
                         android:text="@string/st"
                         />
@@ -273,21 +305,27 @@
                 </FrameLayout>
 
                 <RadioGroup
+                    android:id="@+id/radio_groupQ7"
                     style="@style/std_layout"
-                    android:layout_margin="@dimen/margin_radio">
+                    android:layout_margin="@dimen/margin_radio"
+                    android:onClick="checkQ7">
                     <RadioButton
+                        android:id="@+id/radio1Q7"
                         style="@style/radio_button"
                         android:text="@string/l"
                         />
                     <RadioButton
+                        android:id="@+id/radio2Q7"
                         style="@style/radio_button"
                         android:text="@string/bb"
                         />
                     <RadioButton
+                        android:id="@+id/radio3Q7"
                         style="@style/radio_button"
                         android:text="@string/lme"
                         />
                     <RadioButton
+                        android:id="@+id/radio4Q7"
                         style="@style/radio_button"
                         android:text="@string/ncis"
                         />
@@ -319,10 +357,14 @@
                         style="@style/std_layout"
                         android:orientation="horizontal">
                         <CheckBox
+                            android:onClick="checkQ8"
+                            android:id="@+id/checkbox1Q8"
                             style="@style/checkBox"
                             android:text="@string/jj"
                             />
                         <CheckBox
+                            android:onClick="checkQ8"
+                            android:id="@+id/checkbox2Q8"
                             style="@style/checkBox"
                             android:text="@string/lc"/>
                     </LinearLayout>
@@ -330,9 +372,13 @@
                         style="@style/std_layout"
                         android:orientation="horizontal">
                         <CheckBox
+                            android:onClick="checkQ8"
+                            android:id="@+id/checkbox3Q8"
                             style="@style/checkBox"
                             android:text="@string/nt"/>
                         <CheckBox
+                            android:onClick="checkQ8"
+                            android:id="@+id/checkbox4Q8"
                             style="@style/checkBox"
                             android:text="@string/g"/>
                     </LinearLayout>
@@ -362,8 +408,10 @@
                     android:layout_margin="@dimen/margin_radio"
                     style="@style/std_layout">
                     <EditText
+                        android:id="@+id/editTextQ9"
                         style="@style/std_layout"
-                        android:hint="@string/hint_number" />
+                        android:hint="@string/hint_number"
+                        android:onClick="checkQ9"/>
                 </android.support.design.widget.TextInputLayout>
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -387,21 +435,27 @@
                 </FrameLayout>
 
                 <RadioGroup
+                    android:id="@+id/radio_groupQ10"
                     style="@style/std_layout"
-                    android:layout_margin="@dimen/margin_radio">
+                    android:layout_margin="@dimen/margin_radio"
+                    android:onClick="checkQ10">
                     <RadioButton
+                        android:id="@+id/radio1Q10"
                         style="@style/radio_button"
                         android:text="@string/bb"
                         />
                     <RadioButton
+                        android:id="@+id/radio2Q10"
                         style="@style/radio_button"
                         android:text="@string/ff"
                         />
                     <RadioButton
+                        android:id="@+id/radio3Q10"
                         style="@style/radio_button"
                         android:text="@string/twd"
                         />
                     <RadioButton
+                        android:id="@+id/radio4Q10"
                         style="@style/radio_button"
                         android:text="@string/iz"
                         />
@@ -414,6 +468,7 @@
             style="@style/btn_dialog"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
+            android:onClick="submit"
             />
 
     </LinearLayout>

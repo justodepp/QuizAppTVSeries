@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/std_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <TableLayout style="@style/linear_v">
+
+        <TextView
+            style="@style/text_result"
+            android:text="@string/text_result"/>
+
+        <TableRow android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp">
+            <TextView
+                android:layout_column="1"
+                style="@style/table_header"
+                android:text="@string/text_result_head1"/>
+            <TextView
+                style="@style/table_header"
+                android:text="@string/text_result_head2"/>
+        </TableRow>
+        <TableRow style="@style/table_row">
+            <TextView
+                android:textSize="16sp"
+                android:text="1."/>
+            <TextView
+                style="@style/text_row"
+                android:text="Emerson"/>
+            <TextView
+                style="@style/text_row"
+                android:text="Emerson"/>
+        </TableRow>
+        <TableRow style="@style/table_row">
+            <TextView
+                android:textSize="16sp"
+                android:text="2."/>
+            <TextView
+                style="@style/text_row"
+                android:text="Emerson"/>
+            <TextView
+                style="@style/text_row"
+                android:text="Emerson"/>
+        </TableRow>
+        <TableRow style="@style/table_row">
+            <TextView
+                android:textSize="16sp"
+                android:text="3."/>
+            <TextView
+                style="@style/text_row"
+                android:text="Emerson"/>
+            <TextView
+                style="@style/text_row"
+                android:text="Emerson"/>
+        </TableRow>
+        <TableRow style="@style/table_row">
+            <TextView
+                android:textSize="16sp"
+                android:text="4."/>
+            <TextView
+                style="@style/text_row"
+                android:text="Emerson"/>
+            <TextView
+                style="@style/text_row"
+                android:text="Emerson"/>
+        </TableRow>
+        <TableRow style="@style/table_row">
+            <TextView
+                android:textSize="16sp"
+                android:text="5."/>
+            <TextView
+                style="@style/text_row"
+                android:text="Emerson"/>
+            <TextView
+                style="@style/text_row"
+                android:text="Emerson"/>
+        </TableRow>
+        <TableRow style="@style/table_row">
+            <TextView
+                android:textSize="16sp"
+                android:text="6."/>
+            <TextView
+                style="@style/text_row"
+                android:text="Emerson"/>
+            <TextView
+                style="@style/text_row"
+                android:text="Emerson"/>
+        </TableRow>
+        <TableRow style="@style/table_row">
+            <TextView
+                android:textSize="16sp"
+                android:text="7."/>
+            <TextView
+                style="@style/text_row"
+                android:text="Emerson"/>
+            <TextView
+                style="@style/text_row"
+                android:text="Emerson"/>
+        </TableRow>
+        <TableRow style="@style/table_row">
+            <TextView
+                android:textSize="16sp"
+                android:text="8."/>
+            <TextView
+                style="@style/text_row"
+                android:text="Emerson"/>
+            <TextView
+                style="@style/text_row"
+                android:text="Emerson"/>
+        </TableRow>
+        <TableRow style="@style/table_row">
+            <TextView
+                android:textSize="16sp"
+                android:text="9."/>
+            <TextView
+                style="@style/text_row"
+                android:text="Emerson"/>
+            <TextView
+                style="@style/text_row"
+                android:text="Emerson"/>
+        </TableRow>
+        <TableRow style="@style/table_row">
+            <TextView
+                android:textSize="16sp"
+                android:text="10."/>
+            <TextView
+                style="@style/text_row"
+                android:text="Emerson"/>
+            <TextView
+                style="@style/text_row"
+                android:text="Emerson"/>
+        </TableRow>
+    </TableLayout>
+</ScrollView>

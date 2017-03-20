@@ -10,7 +10,11 @@
     <string name="episode">How many episode for season have this Tv Series?</string>
     <string name="actor">In which Tv Series appear this actor?</string>
     <!-- Result -->
-    <string name="text_result">Contratulation on finish this quizz!\n\nPress the button below to see your result..</string>
+    <string name="text_result1">Contratulation on finish this quizz!</string>
+    <string name="text_result2">Press the button below to see your result..</string>
+    <string name="text_result">The result are:</string>
+    <string name="text_result_head1">Your Answer</string>
+    <string name="text_result_head2">Correct Answer</string>
     <!-- Answer -->
     <string name="bb">Breaking Bad</string>
     <string name="twd">The Walking Dead</string>
