@@ -24,6 +24,7 @@
                 android:textSize="@dimen/text_row_size"
                 android:text="1."/>
             <TextView
+                android:id="@+id/answer1"
                 style="@style/text_row"
                 android:text=""/>
             <TextView
@@ -35,6 +36,7 @@
                 android:textSize="@dimen/text_row_size"
                 android:text="2."/>
             <TextView
+                android:id="@+id/answer2"
                 style="@style/text_row"
                 android:text=""/>
             <TextView
@@ -46,6 +48,7 @@
                 android:textSize="@dimen/text_row_size"
                 android:text="3."/>
             <TextView
+                android:id="@+id/answer3"
                 style="@style/text_row"
                 android:text=""/>
             <TextView
@@ -57,6 +60,7 @@
                 android:textSize="@dimen/text_row_size"
                 android:text="4."/>
             <TextView
+                android:id="@+id/answer4"
                 style="@style/text_row"
                 android:text=""/>
             <TextView
@@ -68,6 +72,7 @@
                 android:textSize="@dimen/text_row_size"
                 android:text="5."/>
             <TextView
+                android:id="@+id/answer5"
                 style="@style/text_row"
                 android:textSize="14sp"
                 android:text=""/>
@@ -81,6 +86,7 @@
                 android:textSize="@dimen/text_row_size"
                 android:text="6."/>
             <TextView
+                android:id="@+id/answer6"
                 style="@style/text_row"
                 android:text=""/>
             <TextView
@@ -92,6 +98,7 @@
                 android:textSize="@dimen/text_row_size"
                 android:text="7."/>
             <TextView
+                android:id="@+id/answer7"
                 style="@style/text_row"
                 android:text=""/>
             <TextView
@@ -103,6 +110,7 @@
                 android:textSize="@dimen/text_row_size"
                 android:text="8."/>
             <TextView
+                android:id="@+id/answer8"
                 style="@style/text_row"
                 android:textSize="14sp"
                 android:text=""/>
@@ -116,6 +124,7 @@
                 android:textSize="@dimen/text_row_size"
                 android:text="9."/>
             <TextView
+                android:id="@+id/answer9"
                 style="@style/text_row"
                 android:text=""/>
             <TextView
@@ -127,6 +136,7 @@
                 android:textSize="@dimen/text_row_size"
                 android:text="10."/>
             <TextView
+                android:id="@+id/answer10"
                 style="@style/text_row"
                 android:text=""/>
             <TextView
