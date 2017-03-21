@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //check answer from question 1
-    public void checkQ1(){
+    public void checkQ1(View view){
         switch (rgq1.getCheckedRadioButtonId()){
             case R.id.radio1Q1:
                 q1 = false;
@@ -174,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //check answer from question 2
-    public void checkQ2(){
+    public void checkQ2(View view){
         String value;
         value = editTextQ2.getText().toString().toUpperCase();
         if(value.equals("DAREDEVIL")) {
@@ -185,7 +185,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //check answer from question 3
-    public void checkQ3(){
+    public void checkQ3(View view){
         switch (rgq3.getCheckedRadioButtonId()){
             case R.id.radio1Q3:
                 q3 = false;
@@ -208,7 +208,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //check answer from question 4
-    public void checkQ4(){
+    public void checkQ4(View view){
         switch (rgq4.getCheckedRadioButtonId()){
             case R.id.radio1Q4:
                 q4 = false;
@@ -231,7 +231,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //check answer from question 5
-    public void checkQ5() {
+    public void checkQ5(View view) {
         String value = " ";
         if(checkBox1Q5.isChecked()){
             value += checkBox1Q5.getText().toString();
@@ -254,7 +254,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //check answer from question 6
-    public void checkQ6(){
+    public void checkQ6(View view){
         switch (rgq6.getCheckedRadioButtonId()){
             case R.id.radio1Q6:
                 q6 = false;
@@ -277,7 +277,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //check answer from question 7
-    public void checkQ7(){
+    public void checkQ7(View view){
         switch (rgq7.getCheckedRadioButtonId()){
             case R.id.radio1Q7:
                 q7 = false;
@@ -300,7 +300,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //check answer from question 8
-    public void checkQ8() {
+    public void checkQ8(View view) {
         String value = " ";
         if(checkBox1Q8.isChecked()){
             value += checkBox1Q8.getText().toString();
@@ -323,7 +323,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //check answer from question 9
-    public void checkQ9(){
+    public void checkQ9(View view){
         String value;
         value = editTextQ9.getText().toString().toUpperCase();
         if(value.equals("3") || value.equals("THREE") || value.equals("TRE")) {
@@ -334,7 +334,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //check answer from question 10
-    public void checkQ10(){
+    public void checkQ10(View view){
         switch (rgq10.getCheckedRadioButtonId()){
             case R.id.radio1Q10:
                 q10 = false;
@@ -357,7 +357,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //submit end question
-    public void submit(){
+    public void submit(View view){
         Intent resultIntent = new Intent(MainActivity.this, Result.class);
         startActivity(resultIntent);
     }

@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.View;
 import android.view.Window;
 import android.widget.Toast;
 
@@ -28,7 +29,7 @@ public class Result extends Activity {
         text = "Hey, your score is "+count+"/10";
     }
 
-    public void calculateResult(){
+    public void calculateResult(View view){
         Thread timerThread = new Thread(){
             public void run(){
                 try{

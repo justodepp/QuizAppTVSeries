@@ -80,7 +80,8 @@
 
                 <android.support.design.widget.TextInputLayout
                     style="@style/std_layout"
-                    android:layout_margin="@dimen/margin_radio">
+                    android:layout_margin="@dimen/margin_radio"
+                    >
 
                     <EditText
                         android:onClick="checkQ2"
