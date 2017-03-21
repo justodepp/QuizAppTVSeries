@@ -12,9 +12,20 @@
     <!-- Result -->
     <string name="text_result1">Contratulation on finish this quizz!</string>
     <string name="text_result2">Press the button below to see your result..</string>
-    <string name="text_result">The result are:</string>
+    <string name="text_result">You, look the result!</string>
     <string name="text_result_head1">Your Answer</string>
     <string name="text_result_head2">Correct Answer</string>
+
+    <string name="text_view1">Dexter</string>
+    <string name="text_view2">Daredevil</string>
+    <string name="text_view3">5</string>
+    <string name="text_view4">Sense8</string>
+    <string name="text_view5">Braking Bad, Better Call Saul</string>
+    <string name="text_view6">Stranger Things</string>
+    <string name="text_view7">Breaking Bad</string>
+    <string name="text_view8">Jessica Jones, Luke Cage</string>
+    <string name="text_view9">3</string>
+    <string name="text_view10">The Walking Dead</string>
     <!-- Answer -->
     <string name="bb">Breaking Bad</string>
     <string name="twd">The Walking Dead</string>

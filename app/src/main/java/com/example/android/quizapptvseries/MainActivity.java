@@ -357,8 +357,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //submit end question
-    public void submit(View view){
+    public void submit(){
         Intent resultIntent = new Intent(MainActivity.this, Result.class);
         startActivity(resultIntent);
+    }
+
+    public int getCount(){
+        return count;
+    }
+
+    public ArrayList<String> getArrayList(){
+        return answerList;
     }
 }

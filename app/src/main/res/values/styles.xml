@@ -58,7 +58,7 @@
             <item name="android:layout_marginRight">8dp</item>
             <item name="android:layout_marginTop">16dp</item>
             <item name="android:layout_marginLeft">8dp</item>
-            <item name="android:textSize">24sp</item>
+            <item name="android:textSize">@dimen/t_size2</item>
             <item name="android:textStyle">bold</item>
         </style>
         <style name="txt_result1" parent="std_layout">
@@ -76,17 +76,23 @@
     <!-- CHECK -->
         <style name="text_row">
             <item name="android:layout_weight">1</item>
-            <item name="android:textSize">16sp</item>
-            <item name="android:paddingLeft">8dp</item>
+            <item name="android:textSize">@dimen/text_row_size</item>
+            <item name="android:paddingLeft">@dimen/text_row_paddingLeft</item>
+        </style>
+        <style name="text_row_c">
+            <item name="android:layout_weight">1</item>
+            <item name="android:textSize">@dimen/text_row_size</item>
+            <item name="android:paddingLeft">@dimen/text_row_paddingLeft</item>
+            <item name="android:textColor">@android:color/holo_green_dark</item>
         </style>
         <style name="table_header">
             <item name="android:layout_weight">1</item>
-            <item name="android:textSize">20sp</item>
+            <item name="android:textSize">@dimen/table_header_size</item>
         </style>
         <style name="table_row">
-            <item name="android:layout_marginTop">8dp</item>
-            <item name="android:layout_marginLeft">8dp</item>
-            <item name="android:layout_marginRight">8dp</item>
+            <item name="android:layout_marginTop">@dimen/table_marginTop</item>
+            <item name="android:layout_marginLeft">@dimen/table_marginLeft</item>
+            <item name="android:layout_marginRight">@dimen/table_marginRight</item>
         </style>
 
     <!-- CONTENT -->

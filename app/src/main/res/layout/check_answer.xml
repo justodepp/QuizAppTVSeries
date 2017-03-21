@@ -21,113 +21,117 @@
         </TableRow>
         <TableRow style="@style/table_row">
             <TextView
-                android:textSize="16sp"
+                android:textSize="@dimen/text_row_size"
                 android:text="1."/>
             <TextView
                 style="@style/text_row"
-                android:text="Emerson"/>
+                android:text=""/>
             <TextView
-                style="@style/text_row"
-                android:text="Emerson"/>
+                style="@style/text_row_c"
+                android:text="@string/text_view1"/>
         </TableRow>
         <TableRow style="@style/table_row">
             <TextView
-                android:textSize="16sp"
+                android:textSize="@dimen/text_row_size"
                 android:text="2."/>
             <TextView
                 style="@style/text_row"
-                android:text="Emerson"/>
+                android:text=""/>
             <TextView
-                style="@style/text_row"
-                android:text="Emerson"/>
+                style="@style/text_row_c"
+                android:text="@string/text_view2"/>
         </TableRow>
         <TableRow style="@style/table_row">
             <TextView
-                android:textSize="16sp"
+                android:textSize="@dimen/text_row_size"
                 android:text="3."/>
             <TextView
                 style="@style/text_row"
-                android:text="Emerson"/>
+                android:text=""/>
             <TextView
-                style="@style/text_row"
-                android:text="Emerson"/>
+                style="@style/text_row_c"
+                android:text="@string/text_view3"/>
         </TableRow>
         <TableRow style="@style/table_row">
             <TextView
-                android:textSize="16sp"
+                android:textSize="@dimen/text_row_size"
                 android:text="4."/>
             <TextView
                 style="@style/text_row"
-                android:text="Emerson"/>
+                android:text=""/>
             <TextView
-                style="@style/text_row"
-                android:text="Emerson"/>
+                style="@style/text_row_c"
+                android:text="@string/text_view4"/>
         </TableRow>
         <TableRow style="@style/table_row">
             <TextView
-                android:textSize="16sp"
+                android:textSize="@dimen/text_row_size"
                 android:text="5."/>
             <TextView
                 style="@style/text_row"
-                android:text="Emerson"/>
+                android:textSize="14sp"
+                android:text=""/>
             <TextView
-                style="@style/text_row"
-                android:text="Emerson"/>
+                style="@style/text_row_c"
+                android:textSize="14sp"
+                android:text="@string/text_view5"/>
         </TableRow>
         <TableRow style="@style/table_row">
             <TextView
-                android:textSize="16sp"
+                android:textSize="@dimen/text_row_size"
                 android:text="6."/>
             <TextView
                 style="@style/text_row"
-                android:text="Emerson"/>
+                android:text=""/>
             <TextView
-                style="@style/text_row"
-                android:text="Emerson"/>
+                style="@style/text_row_c"
+                android:text="@string/text_view6"/>
         </TableRow>
         <TableRow style="@style/table_row">
             <TextView
-                android:textSize="16sp"
+                android:textSize="@dimen/text_row_size"
                 android:text="7."/>
             <TextView
                 style="@style/text_row"
-                android:text="Emerson"/>
+                android:text=""/>
             <TextView
-                style="@style/text_row"
-                android:text="Emerson"/>
+                style="@style/text_row_c"
+                android:text="@string/text_view7"/>
         </TableRow>
         <TableRow style="@style/table_row">
             <TextView
-                android:textSize="16sp"
+                android:textSize="@dimen/text_row_size"
                 android:text="8."/>
             <TextView
                 style="@style/text_row"
-                android:text="Emerson"/>
+                android:textSize="14sp"
+                android:text=""/>
             <TextView
-                style="@style/text_row"
-                android:text="Emerson"/>
+                style="@style/text_row_c"
+                android:textSize="14sp"
+                android:text="@string/text_view8"/>
         </TableRow>
         <TableRow style="@style/table_row">
             <TextView
-                android:textSize="16sp"
+                android:textSize="@dimen/text_row_size"
                 android:text="9."/>
             <TextView
                 style="@style/text_row"
-                android:text="Emerson"/>
+                android:text=""/>
             <TextView
-                style="@style/text_row"
-                android:text="Emerson"/>
+                style="@style/text_row_c"
+                android:text="@string/text_view9"/>
         </TableRow>
         <TableRow style="@style/table_row">
             <TextView
-                android:textSize="16sp"
+                android:textSize="@dimen/text_row_size"
                 android:text="10."/>
             <TextView
                 style="@style/text_row"
-                android:text="Emerson"/>
+                android:text=""/>
             <TextView
-                style="@style/text_row"
-                android:text="Emerson"/>
+                style="@style/text_row_c"
+                android:text="@string/text_view10"/>
         </TableRow>
     </TableLayout>
 </ScrollView>

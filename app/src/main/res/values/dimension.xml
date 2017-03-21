@@ -27,4 +27,10 @@
     <!-- Result -->
     <dimen name="t_size1">34sp</dimen>
     <dimen name="t_size2">24sp</dimen>
+    <dimen name="table_marginTop">8dp</dimen>
+    <dimen name="table_marginLeft">8dp</dimen>
+    <dimen name="table_marginRight">8dp</dimen>
+    <dimen name="table_header_size">20sp</dimen>
+    <dimen name="text_row_paddingLeft">8dp</dimen>
+    <dimen name="text_row_size">16sp</dimen>
 </resources>
