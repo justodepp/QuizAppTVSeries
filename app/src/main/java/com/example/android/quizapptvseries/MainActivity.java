@@ -27,9 +27,11 @@ public class MainActivity extends AppCompatActivity {
     public String name;
     public int count;
     public RadioGroup rgq1, rgq3, rgq4, rgq6, rgq7, rgq10;
-    public RadioButton r1q1, r2q1, r3q1, r4q1, r1q3, r2q3, r3q3, r4q3, r1q4, r2q4, r3q4, r4q4, r1q6, r2q6, r3q6, r4q6, r1q7, r2q7, r3q7, r4q7, r1q10, r2q10, r3q10, r4q10;
+    public RadioButton r1q1, r2q1, r3q1, r4q1, r1q3, r2q3, r3q3, r4q3, r1q4, r2q4, r3q4, r4q4, r1q6,
+                       r2q6, r3q6, r4q6, r1q7, r2q7, r3q7, r4q7, r1q10, r2q10, r3q10, r4q10;
     public EditText editTextQ2, editTextQ9;
-    public CheckBox checkBox1Q5, checkBox2Q5, checkBox3Q5, checkBox4Q5, checkBox1Q8, checkBox2Q8, checkBox3Q8, checkBox4Q8;
+    public CheckBox checkBox1Q5, checkBox2Q5, checkBox3Q5, checkBox4Q5, checkBox1Q8, checkBox2Q8,
+                    checkBox3Q8, checkBox4Q8;
     public boolean q1,q2,q3,q4,q5,q6,q7,q8,q9,q10;
 
     public ArrayList <String> answerList;
@@ -39,12 +41,26 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /*if (savedInstanceState != null) {
+            answerList = savedInstanceState.getStringArrayList("answerList");
+            name = savedInstanceState.getString("name");
+            q1 = savedInstanceState.getBoolean("q1");
+            q2 = savedInstanceState.getBoolean("q2");
+            q3 = savedInstanceState.getBoolean("q3");
+            q4 = savedInstanceState.getBoolean("q4");
+            q5 = savedInstanceState.getBoolean("q5");
+            q6 = savedInstanceState.getBoolean("q6");
+            q7 = savedInstanceState.getBoolean("q7");
+            q8 = savedInstanceState.getBoolean("q8");
+            q9 = savedInstanceState.getBoolean("q9");
+            q10 = savedInstanceState.getBoolean("q10");
+        } else instantiateObject();*/
+
+        instantiateObject();
+
         alert = new CustomDialog();
         alert.showDialog(MainActivity.this);
         name = alert.getName();
-        setActionOnScrollUp();
-
-        instantiateObject();
 
         first_ImageView = (ImageView) findViewById(R.id.imageView);
         Picasso.with(this)
@@ -52,6 +68,27 @@ public class MainActivity extends AppCompatActivity {
                 .fit()
                 .centerCrop()
                 .into(first_ImageView);
+    }
+
+    // This callback is called only when there is a saved instance previously saved using
+    // onSaveInstanceState(). We restore some state in onCreate() while we can optionally restore
+    // other state here, possibly usable after onStart() has completed.
+    // The savedInstanceState Bundle is same as the one used in onCreate().
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putStringArrayList("answerList",answerList);
+        outState.putString("name", name);
+        outState.putBoolean("q1",q1);
+        outState.putBoolean("q2",q2);
+        outState.putBoolean("q3",q3);
+        outState.putBoolean("q4",q4);
+        outState.putBoolean("q5",q5);
+        outState.putBoolean("q6",q6);
+        outState.putBoolean("q7",q7);
+        outState.putBoolean("q8",q8);
+        outState.putBoolean("q9",q9);
+        outState.putBoolean("q10",q10);
     }
 
     //initialize all needed obj
@@ -99,6 +136,8 @@ public class MainActivity extends AppCompatActivity {
         r2q10 = (RadioButton) findViewById(R.id.radio2Q10);
         r3q10 = (RadioButton) findViewById(R.id.radio3Q10);
         r4q10 = (RadioButton) findViewById(R.id.radio4Q10);
+
+        setActionOnScrollUp();
     }
 
     //Set text on actionBar when scrolling up.
