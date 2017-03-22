@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
     public CustomDialog alert;
     public CollapsingToolbarLayout collapsingToolbar;
     public Toolbar toolbar;
-    public ImageView first_ImageView;
 
     public String name;
     public int count;
@@ -62,12 +61,6 @@ public class MainActivity extends AppCompatActivity {
         alert.showDialog(MainActivity.this);
         name = alert.getName();
 
-        first_ImageView = (ImageView) findViewById(R.id.imageView);
-        Picasso.with(this)
-                .load(R.drawable.dexter)
-                .fit()
-                .centerCrop()
-                .into(first_ImageView);
     }
 
     // This callback is called only when there is a saved instance previously saved using
@@ -358,6 +351,16 @@ public class MainActivity extends AppCompatActivity {
 
     //submit end question
     public void submit(View view){
+        checkQ1(view);
+        checkQ2(view);
+        checkQ3(view);
+        checkQ4(view);
+        checkQ5(view);
+        checkQ6(view);
+        checkQ7(view);
+        checkQ8(view);
+        checkQ9(view);
+        checkQ10(view);
         Intent resultIntent = new Intent(MainActivity.this, Result.class);
         startActivity(resultIntent);
     }

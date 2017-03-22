@@ -10,7 +10,8 @@
 
     <LinearLayout
         style="@style/linear_v"
-        android:layout_marginTop="@dimen/c_htop">
+        android:layout_marginTop="@dimen/c_htop"
+        android:layout_marginBottom="@dimen/c_htop">
         
         <android.support.v7.widget.CardView
             style="@style/CardStyle">
@@ -33,8 +34,7 @@
                 <RadioGroup
                     android:id="@+id/radio_groupQ1"
                     style="@style/std_layout"
-                    android:layout_margin="@dimen/margin_radio"
-                    android:onClick="checkQ1">
+                    android:layout_margin="@dimen/margin_radio">
                     <RadioButton
                         android:id="@+id/radio1Q1"
                         style="@style/radio_button"
@@ -81,10 +81,11 @@
                 <android.support.design.widget.TextInputLayout
                     style="@style/std_layout"
                     android:layout_margin="@dimen/margin_radio"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
                     >
 
                     <EditText
-                        android:onClick="checkQ2"
                         android:id="@+id/editTextQ2"
                         style="@style/std_layout"
                         android:hint="@string/hint_name" />
@@ -112,7 +113,6 @@
                 </FrameLayout>
 
                 <RadioGroup
-                    android:onClick="checkQ3"
                     android:id="@+id/radio_groupQ3"
                     style="@style/std_layout"
                     android:layout_margin="@dimen/margin_radio">
@@ -160,7 +160,6 @@
 
 
                 <RadioGroup
-                    android:onClick="checkQ4"
                     android:id="@+id/radio_groupQ4"
                     style="@style/std_layout"
                     android:layout_margin="@dimen/margin_radio">
@@ -218,7 +217,6 @@
                             android:text="@string/to"
                             />
                         <CheckBox
-                            android:onClick="checkQ5"
                             android:id="@+id/checkbox2Q5"
                             style="@style/checkBox"
                             android:text="@string/bb"/>
@@ -227,7 +225,6 @@
                         style="@style/std_layout"
                         android:orientation="horizontal">
                         <CheckBox
-                            android:onClick="checkQ5"
                             android:id="@+id/checkbox3Q5"
                             style="@style/checkBox"
                             android:text="@string/bcs"/>
@@ -261,8 +258,7 @@
                 <RadioGroup
                     android:id="@+id/radio_groupQ6"
                     style="@style/std_layout"
-                    android:layout_margin="@dimen/margin_radio"
-                    android:onClick="checkQ6">
+                    android:layout_margin="@dimen/margin_radio">
                     <RadioButton
                         android:id="@+id/radio1Q6"
                         style="@style/radio_button"
@@ -308,8 +304,7 @@
                 <RadioGroup
                     android:id="@+id/radio_groupQ7"
                     style="@style/std_layout"
-                    android:layout_margin="@dimen/margin_radio"
-                    android:onClick="checkQ7">
+                    android:layout_margin="@dimen/margin_radio">
                     <RadioButton
                         android:id="@+id/radio1Q7"
                         style="@style/radio_button"
@@ -358,13 +353,11 @@
                         style="@style/std_layout"
                         android:orientation="horizontal">
                         <CheckBox
-                            android:onClick="checkQ8"
                             android:id="@+id/checkbox1Q8"
                             style="@style/checkBox"
                             android:text="@string/jj"
                             />
                         <CheckBox
-                            android:onClick="checkQ8"
                             android:id="@+id/checkbox2Q8"
                             style="@style/checkBox"
                             android:text="@string/lc"/>
@@ -373,12 +366,10 @@
                         style="@style/std_layout"
                         android:orientation="horizontal">
                         <CheckBox
-                            android:onClick="checkQ8"
                             android:id="@+id/checkbox3Q8"
                             style="@style/checkBox"
                             android:text="@string/nt"/>
                         <CheckBox
-                            android:onClick="checkQ8"
                             android:id="@+id/checkbox4Q8"
                             style="@style/checkBox"
                             android:text="@string/g"/>
@@ -407,12 +398,13 @@
 
                 <android.support.design.widget.TextInputLayout
                     android:layout_margin="@dimen/margin_radio"
-                    style="@style/std_layout">
+                    style="@style/std_layout"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
                     <EditText
                         android:id="@+id/editTextQ9"
                         style="@style/std_layout"
-                        android:hint="@string/hint_number"
-                        android:onClick="checkQ9"/>
+                        android:hint="@string/hint_number"/>
                 </android.support.design.widget.TextInputLayout>
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -438,8 +430,7 @@
                 <RadioGroup
                     android:id="@+id/radio_groupQ10"
                     style="@style/std_layout"
-                    android:layout_margin="@dimen/margin_radio"
-                    android:onClick="checkQ10">
+                    android:layout_margin="@dimen/margin_radio">
                     <RadioButton
                         android:id="@+id/radio1Q10"
                         style="@style/radio_button"
@@ -468,7 +459,7 @@
             android:id="@+id/btn_submitQuestion"
             style="@style/btn_dialog"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="16dp"
             android:onClick="submit"
             />
 
