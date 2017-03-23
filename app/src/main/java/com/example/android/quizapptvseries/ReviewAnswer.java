@@ -13,8 +13,8 @@ import java.util.ArrayList;
 public class ReviewAnswer extends Activity{
 
     public ArrayList <String> arrayList;
-    public Bundle reviewBundle;
-    public Intent reviewIntent;
+    //public Bundle reviewBundle;
+    //public Intent reviewIntent;
     public String name;
 
     public TextView nameAnswer, answer1, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer9,
@@ -32,13 +32,13 @@ public class ReviewAnswer extends Activity{
     }
 
     public void init(){
-        //nameAnswer = (TextView) findViewById(R.id.nameAnswer);
-        //name = reviewBundle.getString("name");
+        nameAnswer = (TextView) findViewById(R.id.nameAnswer);
+        name = getIntent().getBundleExtra("reviewBundle").getString("name");
+        name = name + "" + R.string.text_result;
+        nameAnswer.setText(name);
 
-        //nameAnswer.setText(name+""+R.string.text_result);
-
-        reviewIntent = getIntent();
-        reviewBundle = reviewIntent.getBundleExtra("reviewBundle");
+        //reviewIntent = getIntent();
+        //reviewBundle = reviewIntent.getBundleExtra("reviewBundle");
 
         answer1 = (TextView) findViewById(R.id.answer1);
         answer2 = (TextView) findViewById(R.id.answer2);
@@ -54,9 +54,10 @@ public class ReviewAnswer extends Activity{
     }
 
     public void setResult(){
-        arrayList = reviewBundle.getStringArrayList("arrayList");
+        //arrayList = reviewBundle.getStringArrayList("arrayList");
+        arrayList = getIntent().getBundleExtra("reviewBundle").getStringArrayList("arrayList");
 
-//        answer1.setText(arrayList.get(1));
+        answer1.setText(arrayList != null ? arrayList.get(1) : null);
 //        answer2.setText(arrayList.get(2));
 //        answer3.setText(arrayList.get(3));
 //        answer4.setText(arrayList.get(4));

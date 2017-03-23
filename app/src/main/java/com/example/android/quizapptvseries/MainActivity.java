@@ -1,5 +1,6 @@
 package com.example.android.quizapptvseries;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +13,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 
 import com.bumptech.glide.Glide;
@@ -57,9 +59,6 @@ public class MainActivity extends AppCompatActivity {
             q9 = savedInstanceState.getBoolean("q9");
             q10 = savedInstanceState.getBoolean("q10");
         } else instantiateObject();
-
-        //instantiateObject();
-
     }
 
     // This callback is called only when there is a saved instance previously saved using
@@ -427,7 +426,7 @@ public class MainActivity extends AppCompatActivity {
 
         resultBundle.putString("name", name);
         resultBundle.putInt("count", getCount());
-        resultBundle.putStringArrayList("arrayList",answerList);
+        resultBundle.putStringArrayList("arrayList", answerList);
 
         resultIntent.putExtra("resultBundle",resultBundle);
         startActivity(resultIntent);
@@ -435,9 +434,5 @@ public class MainActivity extends AppCompatActivity {
 
     public int getCount(){
         return count;
-    }
-
-    public ArrayList<String> getArrayList(){
-        return answerList;
     }
 }

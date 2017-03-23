@@ -9,11 +9,12 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Toast;
 
+import static android.R.attr.name;
+
 public class Result extends Activity {
 
     private String text;
-    public Bundle reviewBundle;
-    public Intent reviewIntent;
+    private String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,11 +22,9 @@ public class Result extends Activity {
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.result);
 
-        reviewIntent = getIntent();
-        reviewBundle = reviewIntent.getBundleExtra("resultBundle");
-
-        int count = reviewBundle.getInt("count");
-        text = "Hey, your score is "+count+"/10";
+        int count = getIntent().getBundleExtra("resultBundle").getInt("count");
+        name = getIntent().getBundleExtra("resultBundle").getString("name");
+        text = "Hey "+name+", your score is "+count+"/10";
     }
 
     public void calculateResult(View view){
@@ -44,9 +43,12 @@ public class Result extends Activity {
                     e.printStackTrace();
                 }finally{
                     Intent intent = new Intent(Result.this,ReviewAnswer.class);
+                    Bundle reviewBundle = new Bundle();
 
-                    reviewBundle.putStringArrayList("arrayList",reviewIntent.getStringArrayListExtra("arrayList"));
-                    reviewIntent.putExtra("reviewBundle",reviewBundle);
+                    reviewBundle.putString("name", name);
+                    reviewBundle.putStringArrayList("arrayList",getIntent().getBundleExtra("resultBundle").getStringArrayList("arrayList"));
+
+                    intent.putExtra("reviewBundle",reviewBundle);
 
                     startActivity(intent);
                 }
