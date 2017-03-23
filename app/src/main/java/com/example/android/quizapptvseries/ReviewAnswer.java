@@ -35,10 +35,10 @@ public class ReviewAnswer extends Activity{
         reviewIntent = getIntent();
         reviewBundle = reviewIntent.getBundleExtra("resultBundle");
 
-        nameAnswer = (TextView) findViewById(R.id.nameAnswer);
-        name = reviewBundle.getString("name");
+        //nameAnswer = (TextView) findViewById(R.id.nameAnswer);
+        //name = reviewBundle.getString("name");
 
-        nameAnswer.setText(name+""+R.string.text_result);
+        //nameAnswer.setText(name+""+R.string.text_result);
 
         answer1 = (TextView) findViewById(R.id.answer1);
         answer2 = (TextView) findViewById(R.id.answer2);

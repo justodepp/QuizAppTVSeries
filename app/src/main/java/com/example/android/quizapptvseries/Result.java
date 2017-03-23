@@ -43,7 +43,7 @@ public class Result extends Activity {
                 }catch(InterruptedException e){
                     e.printStackTrace();
                 }finally{
-                    Intent intent = new Intent(Result.this,MainActivity.class);
+                    Intent intent = new Intent(Result.this,ReviewAnswer.class);
                     startActivity(intent);
                     /*Intent intent = new Intent(Result.this, ReviewAnswer.class);
                     resultBundle.putStringArrayList("arrayList",resultIntent.getStringArrayListExtra("arrayList"));
