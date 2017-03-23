@@ -11,7 +11,9 @@
     <LinearLayout
         style="@style/linear_v"
         android:layout_marginTop="@dimen/c_htop"
-        android:layout_marginBottom="@dimen/c_htop">
+        android:layout_marginBottom="@dimen/c_htop"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
         
         <android.support.v7.widget.CardView
             style="@style/CardStyle">
@@ -80,10 +82,7 @@
 
                 <android.support.design.widget.TextInputLayout
                     style="@style/std_layout"
-                    android:layout_margin="@dimen/margin_radio"
-                    android:focusable="true"
-                    android:focusableInTouchMode="true"
-                    >
+                    android:layout_margin="@dimen/margin_radio">
 
                     <EditText
                         android:id="@+id/editTextQ2"
@@ -398,9 +397,7 @@
 
                 <android.support.design.widget.TextInputLayout
                     android:layout_margin="@dimen/margin_radio"
-                    style="@style/std_layout"
-                    android:focusable="true"
-                    android:focusableInTouchMode="true">
+                    style="@style/std_layout">
                     <EditText
                         android:id="@+id/editTextQ9"
                         style="@style/std_layout"
