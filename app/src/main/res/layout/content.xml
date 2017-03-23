@@ -24,9 +24,9 @@
                     style="@style/frame_layout">
 
                     <ImageView
+                        android:id="@+id/imageViewDexter"
                         style="@style/imageView_quizCard"
-                        android:src="@drawable/dexter"
-                        />
+                        android:contentDescription="@string/dx" />
                     <TextView
                         style="@style/textView_quizCard"
                         android:text="@string/which"
@@ -71,8 +71,9 @@
                 <FrameLayout style="@style/frame_layout">
 
                     <ImageView
+                        android:id="@+id/imageViewDaredevil"
                         style="@style/imageView_quizCard"
-                        android:src="@drawable/daredevil" />
+                        android:contentDescription="@string/dd" />
 
                     <TextView
                         style="@style/textView_quizCard"
@@ -102,8 +103,9 @@
                 <FrameLayout
                     style="@style/frame_layout">
                     <ImageView
+                        android:id="@+id/imageViewArrow"
                         style="@style/imageView_quizCard"
-                        android:src="@drawable/arrow"/>
+                        android:contentDescription="@string/arrow"/>
 
                     <TextView
                         style="@style/textView_quizCard"
@@ -148,8 +150,9 @@
                 <FrameLayout
                     style="@style/frame_layout">
                     <ImageView
+                        android:id="@+id/imageViewSense8"
                         style="@style/imageView_quizCard"
-                        android:src="@drawable/sense8"/>
+                        android:contentDescription="@string/s8"/>
 
                     <TextView
                         style="@style/textView_quizCard"
@@ -195,8 +198,9 @@
                 <FrameLayout
                     style="@style/frame_layout">
                     <ImageView
+                        android:id="@+id/imageViewBcs"
                         style="@style/imageView_quizCard"
-                        android:src="@drawable/better_call_saul"/>
+                        android:contentDescription="@string/bcs"/>
 
                     <TextView
                         style="@style/textView_quizCard"
@@ -245,8 +249,9 @@
                 <FrameLayout
                     style="@style/frame_layout">
                     <ImageView
+                        android:id="@+id/imageViewStrangerT"
                         style="@style/imageView_quizCard"
-                        android:src="@drawable/stranger_things"/>
+                        android:contentDescription="@string/st"/>
 
                     <TextView
                         style="@style/textView_quizCard"
@@ -291,8 +296,9 @@
                 <FrameLayout
                     style="@style/frame_layout">
                     <ImageView
+                        android:id="@+id/imageViewBB"
                         style="@style/imageView_quizCard"
-                        android:src="@drawable/breaking_bad"/>
+                        android:contentDescription="@string/bb"/>
 
                     <TextView
                         style="@style/textView_quizCard"
@@ -337,8 +343,9 @@
                 <FrameLayout
                     style="@style/frame_layout">
                     <ImageView
+                        android:id="@+id/imageViewLukeC"
                         style="@style/imageView_quizCard"
-                        android:src="@drawable/luke_cage"/>
+                        android:contentDescription="@string/lc"/>
 
                     <TextView
                         style="@style/textView_quizCard"
@@ -386,8 +393,9 @@
                 <FrameLayout
                     style="@style/frame_layout">
                     <ImageView
+                        android:id="@+id/imageViewSherlock"
                         style="@style/imageView_quizCard"
-                        android:src="@drawable/sherlock"/>
+                        android:contentDescription="@string/sh"/>
 
                     <TextView
                         style="@style/textView_quizCard"
@@ -415,8 +423,9 @@
                 <FrameLayout
                     style="@style/frame_layout">
                     <ImageView
+                        android:id="@+id/imageViewTwd"
                         style="@style/imageView_quizCard"
-                        android:src="@drawable/the_walking_dead"/>
+                        android:contentDescription="@string/twd"/>
 
                     <TextView
                         style="@style/textView_quizCard"

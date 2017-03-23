@@ -14,6 +14,8 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 
+import com.bumptech.glide.Glide;
+
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
     public CustomDialog alert;
     public CollapsingToolbarLayout collapsingToolbar;
     public Toolbar toolbar;
+    public ImageView imageView1, imageView2, imageView3, imageView4, imageView5, imageView6,
+                     imageView7, imageView8, imageView9, imageView10;
 
     public String name;
     public int count;
@@ -89,6 +93,8 @@ public class MainActivity extends AppCompatActivity {
         alert.showDialog(MainActivity.this);
         name = alert.getName();
 
+        loadingImage();
+
         q1 = q2 = q3 = q4 = q5 = q6 = q7 = q8 = q9 = q10 = false;
         rgq1 = (RadioGroup) findViewById(R.id.radio_groupQ1);
         r1q1 = (RadioButton) findViewById(R.id.radio1Q1);
@@ -132,6 +138,50 @@ public class MainActivity extends AppCompatActivity {
         r4q10 = (RadioButton) findViewById(R.id.radio4Q10);
 
         setActionOnScrollUp();
+    }
+
+    //load all image using Glide
+    public void loadingImage(){
+        imageView1 = (ImageView) findViewById(R.id.imageViewDexter);
+        Glide.with(this)
+                .load(R.drawable.dexter)
+                .into(imageView1);
+        imageView2 = (ImageView) findViewById(R.id.imageViewDaredevil);
+        Glide.with(this)
+                .load(R.drawable.daredevil)
+                .into(imageView2);
+        imageView3 = (ImageView) findViewById(R.id.imageViewArrow);
+        Glide.with(this)
+                .load(R.drawable.arrow)
+                .into(imageView3);
+        imageView4 = (ImageView) findViewById(R.id.imageViewSense8);
+        Glide.with(this)
+                .load(R.drawable.sense8)
+                .into(imageView4);
+        imageView5 = (ImageView) findViewById(R.id.imageViewBcs);
+        Glide.with(this)
+                .load(R.drawable.better_call_saul)
+                .into(imageView5);
+        imageView6 = (ImageView) findViewById(R.id.imageViewStrangerT);
+        Glide.with(this)
+                .load(R.drawable.stranger_things)
+                .into(imageView6);
+        imageView7 = (ImageView) findViewById(R.id.imageViewBB);
+        Glide.with(this)
+                .load(R.drawable.breaking_bad)
+                .into(imageView7);
+        imageView8 = (ImageView) findViewById(R.id.imageViewLukeC);
+        Glide.with(this)
+                .load(R.drawable.luke_cage)
+                .into(imageView8);
+        imageView9 = (ImageView) findViewById(R.id.imageViewSherlock);
+        Glide.with(this)
+                .load(R.drawable.sherlock)
+                .into(imageView9);
+        imageView10 = (ImageView) findViewById(R.id.imageViewTwd);
+        Glide.with(this)
+                .load(R.drawable.the_walking_dead)
+                .into(imageView10);
     }
 
     //Set text on actionBar when scrolling up.
