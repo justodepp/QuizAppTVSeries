@@ -14,8 +14,9 @@ import java.util.ArrayList;
 
 public class ReviewAnswer extends Activity{
 
-    public MainActivity mainActivity;
     public ArrayList <String> arrayList;
+    public Bundle reviewBundle;
+    public Intent reviewIntent;
 
     public TextView answer1, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer9,
                     answer10;
@@ -42,10 +43,15 @@ public class ReviewAnswer extends Activity{
         answer8 = (TextView) findViewById(R.id.answer8);
         answer9 = (TextView) findViewById(R.id.answer9);
         answer10 = (TextView) findViewById(R.id.answer10);
+
+        reviewIntent = getIntent();
+        reviewBundle = reviewIntent.getBundleExtra("resultBundle");
     }
 
     public void setResult(){
-        arrayList = mainActivity.getArrayList();
+
+        arrayList = reviewBundle.getStringArrayList("arrayList");
+
         answer1.setText(arrayList.get(1));
         answer2.setText(arrayList.get(2));
         answer3.setText(arrayList.get(3));
