@@ -12,8 +12,8 @@ import android.widget.Toast;
 public class Result extends Activity {
 
     private String text;
-    public Bundle resultBundle;
-    public Intent resultIntent;
+    public Bundle reviewBundle;
+    public Intent reviewIntent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,10 +21,10 @@ public class Result extends Activity {
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.result);
 
-        resultIntent = getIntent();
-        resultBundle = resultIntent.getBundleExtra("resultBundle");
+        reviewIntent = getIntent();
+        reviewBundle = reviewIntent.getBundleExtra("resultBundle");
 
-        int count = resultBundle.getInt("count");
+        int count = reviewBundle.getInt("count");
         text = "Hey, your score is "+count+"/10";
     }
 
@@ -44,11 +44,11 @@ public class Result extends Activity {
                     e.printStackTrace();
                 }finally{
                     Intent intent = new Intent(Result.this,ReviewAnswer.class);
+
+                    reviewBundle.putStringArrayList("arrayList",reviewIntent.getStringArrayListExtra("arrayList"));
+                    reviewIntent.putExtra("reviewBundle",reviewBundle);
+
                     startActivity(intent);
-                    /*Intent intent = new Intent(Result.this, ReviewAnswer.class);
-                    resultBundle.putStringArrayList("arrayList",resultIntent.getStringArrayListExtra("arrayList"));
-                    resultIntent.putExtra("resultBundle",resultBundle);
-                    startActivity(intent);*/
                 }
             }
         };

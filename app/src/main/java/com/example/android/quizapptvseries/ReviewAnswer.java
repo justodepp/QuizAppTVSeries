@@ -32,13 +32,13 @@ public class ReviewAnswer extends Activity{
     }
 
     public void init(){
-        reviewIntent = getIntent();
-        reviewBundle = reviewIntent.getBundleExtra("resultBundle");
-
         //nameAnswer = (TextView) findViewById(R.id.nameAnswer);
         //name = reviewBundle.getString("name");
 
         //nameAnswer.setText(name+""+R.string.text_result);
+
+        reviewIntent = getIntent();
+        reviewBundle = reviewIntent.getBundleExtra("reviewBundle");
 
         answer1 = (TextView) findViewById(R.id.answer1);
         answer2 = (TextView) findViewById(R.id.answer2);
@@ -51,23 +51,21 @@ public class ReviewAnswer extends Activity{
         answer9 = (TextView) findViewById(R.id.answer9);
         answer10 = (TextView) findViewById(R.id.answer10);
 
-        reviewIntent = getIntent();
-        reviewBundle = reviewIntent.getBundleExtra("resultBundle");
     }
 
     public void setResult(){
         arrayList = reviewBundle.getStringArrayList("arrayList");
 
-        answer1.setText(arrayList.get(1));
-        answer2.setText(arrayList.get(2));
-        answer3.setText(arrayList.get(3));
-        answer4.setText(arrayList.get(4));
-        answer5.setText(arrayList.get(5));
-        answer6.setText(arrayList.get(6));
-        answer7.setText(arrayList.get(7));
-        answer8.setText(arrayList.get(8));
-        answer9.setText(arrayList.get(9));
-        answer10.setText(arrayList.get(10));
+//        answer1.setText(arrayList.get(1));
+//        answer2.setText(arrayList.get(2));
+//        answer3.setText(arrayList.get(3));
+//        answer4.setText(arrayList.get(4));
+//        answer5.setText(arrayList.get(5));
+//        answer6.setText(arrayList.get(6));
+//        answer7.setText(arrayList.get(7));
+//        answer8.setText(arrayList.get(8));
+//        answer9.setText(arrayList.get(9));
+//        answer10.setText(arrayList.get(10));
     }
 
     @Override
