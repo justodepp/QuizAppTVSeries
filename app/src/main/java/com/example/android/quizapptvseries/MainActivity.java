@@ -91,7 +91,6 @@ public class MainActivity extends AppCompatActivity {
 
         alert = new CustomDialog();
         alert.showDialog(MainActivity.this);
-        name = alert.getName();
 
         loadingImage();
 

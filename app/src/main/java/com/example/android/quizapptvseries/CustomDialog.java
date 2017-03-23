@@ -1,11 +1,9 @@
 package com.example.android.quizapptvseries;
 
-/**
- * Created by gacavalli on 17/03/2017.
- */
-
 import android.app.Activity;
 import android.app.Dialog;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -47,9 +45,5 @@ public class CustomDialog extends Activity{
         lp.width = WindowManager.LayoutParams.MATCH_PARENT;
         lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
         window.setAttributes(lp);
-    }
-
-    public String getName() {
-        return name;
     }
 }

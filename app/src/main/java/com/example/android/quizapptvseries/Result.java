@@ -43,10 +43,12 @@ public class Result extends Activity {
                 }catch(InterruptedException e){
                     e.printStackTrace();
                 }finally{
-                    Intent intent = new Intent(Result.this, ReviewAnswer.class);
-                    //resultBundle.putStringArrayList("arrayList",resultIntent.getStringArrayListExtra("arrayList"));
-                    //resultIntent.putExtra("resultBundle",resultBundle);
+                    Intent intent = new Intent(Result.this,MainActivity.class);
                     startActivity(intent);
+                    /*Intent intent = new Intent(Result.this, ReviewAnswer.class);
+                    resultBundle.putStringArrayList("arrayList",resultIntent.getStringArrayListExtra("arrayList"));
+                    resultIntent.putExtra("resultBundle",resultBundle);
+                    startActivity(intent);*/
                 }
             }
         };
