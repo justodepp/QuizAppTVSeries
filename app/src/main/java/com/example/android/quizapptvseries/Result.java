@@ -9,10 +9,6 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Toast;
 
-/**
- * Created by gacavalli on 20/03/2017.
- */
-
 public class Result extends Activity {
 
     private String text;

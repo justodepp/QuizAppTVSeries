@@ -426,6 +426,7 @@ public class MainActivity extends AppCompatActivity {
         Intent resultIntent = new Intent(MainActivity.this, Result.class);
         Bundle resultBundle = new Bundle();
 
+        resultBundle.putString("name", name);
         resultBundle.putInt("count", getCount());
         resultBundle.putStringArrayList("arrayList",answerList);
 

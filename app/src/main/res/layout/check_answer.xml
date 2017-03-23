@@ -5,6 +5,7 @@
     <TableLayout style="@style/linear_v">
 
         <TextView
+            android:id="@+id/nameAnswer"
             style="@style/text_result"
             android:text="@string/text_result"/>
 

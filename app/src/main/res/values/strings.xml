@@ -12,7 +12,7 @@
     <!-- Result -->
     <string name="text_result1">Contratulation on finish this quizz!</string>
     <string name="text_result2">Press the button below to see your result..</string>
-    <string name="text_result">You, look the result!</string>
+    <string name="text_result">, look the result!</string>
     <string name="text_result_head1">Your Answer</string>
     <string name="text_result_head2">Correct Answer</string>
 
