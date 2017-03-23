@@ -459,9 +459,13 @@
             android:id="@+id/btn_submitQuestion"
             style="@style/btn_dialog"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="8dp"
             android:onClick="submit"
             />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
 
     </LinearLayout>
 

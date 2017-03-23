@@ -13,7 +13,6 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
-import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
