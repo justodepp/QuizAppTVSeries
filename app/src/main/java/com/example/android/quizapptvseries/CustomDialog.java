@@ -40,6 +40,7 @@ public class CustomDialog extends Activity{
         //Grab the window of the dialog, and change the width
         WindowManager.LayoutParams lp = new WindowManager.LayoutParams();
         Window window = dialog.getWindow();
+        assert window != null;
         lp.copyFrom(window.getAttributes());
         //This makes the dialog take up the full width
         lp.width = WindowManager.LayoutParams.MATCH_PARENT;

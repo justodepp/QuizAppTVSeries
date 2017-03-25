@@ -1,6 +1,5 @@
 package com.example.android.quizapptvseries;
 
-import android.content.Context;
 import android.content.Intent;
 import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -13,8 +12,6 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.Toast;
-
 
 import com.bumptech.glide.Glide;
 
@@ -435,4 +432,5 @@ public class MainActivity extends AppCompatActivity {
     public int getCount(){
         return count;
     }
+
 }
