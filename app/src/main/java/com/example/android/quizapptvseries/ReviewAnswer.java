@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class ReviewAnswer extends Activity{
 
     public ArrayList <String> arrayList;
-    public String name;
+    public String name, text;
 
     public TextView nameAnswer, answer1, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer9,
                     answer10;
@@ -31,8 +31,8 @@ public class ReviewAnswer extends Activity{
     public void init(){
         nameAnswer = (TextView) findViewById(R.id.nameAnswer);
         name = getIntent().getBundleExtra("reviewBundle").getString("name");
-        name = name + "" + R.string.text_result;
-        nameAnswer.setText(name);
+        text = name + "" + getResources().getString(R.string.text_result);
+        nameAnswer.setText(text);
 
         answer1 = (TextView) findViewById(R.id.answer1);
         answer2 = (TextView) findViewById(R.id.answer2);
