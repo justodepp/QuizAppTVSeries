@@ -3,7 +3,6 @@ package com.example.android.quizapptvseries;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
 
@@ -13,8 +12,6 @@ import java.util.ArrayList;
 public class ReviewAnswer extends Activity{
 
     public ArrayList <String> arrayList;
-    //public Bundle reviewBundle;
-    //public Intent reviewIntent;
     public String name;
 
     public TextView nameAnswer, answer1, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer9,
@@ -37,9 +34,6 @@ public class ReviewAnswer extends Activity{
         name = name + "" + R.string.text_result;
         nameAnswer.setText(name);
 
-        //reviewIntent = getIntent();
-        //reviewBundle = reviewIntent.getBundleExtra("reviewBundle");
-
         answer1 = (TextView) findViewById(R.id.answer1);
         answer2 = (TextView) findViewById(R.id.answer2);
         answer3 = (TextView) findViewById(R.id.answer3);
@@ -54,19 +48,20 @@ public class ReviewAnswer extends Activity{
     }
 
     public void setResult(){
-        //arrayList = reviewBundle.getStringArrayList("arrayList");
         arrayList = getIntent().getBundleExtra("reviewBundle").getStringArrayList("arrayList");
 
-        answer1.setText(arrayList != null ? arrayList.get(1) : null);
-//        answer2.setText(arrayList.get(2));
-//        answer3.setText(arrayList.get(3));
-//        answer4.setText(arrayList.get(4));
-//        answer5.setText(arrayList.get(5));
-//        answer6.setText(arrayList.get(6));
-//        answer7.setText(arrayList.get(7));
-//        answer8.setText(arrayList.get(8));
-//        answer9.setText(arrayList.get(9));
-//        answer10.setText(arrayList.get(10));
+        if (arrayList != null) {
+            answer1.setText(arrayList.get(1));
+            answer2.setText(arrayList.get(2));
+            answer3.setText(arrayList.get(3));
+            answer4.setText(arrayList.get(4));
+            answer5.setText(arrayList.get(5));
+            answer6.setText(arrayList.get(6));
+            answer7.setText(arrayList.get(7));
+            answer8.setText(arrayList.get(8));
+            answer9.setText(arrayList.get(9));
+            answer10.setText(arrayList.get(10));
+        }
     }
 
     @Override
