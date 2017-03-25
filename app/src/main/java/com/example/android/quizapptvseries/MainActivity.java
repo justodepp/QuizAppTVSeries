@@ -17,6 +17,9 @@ import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
+import static com.example.android.quizapptvseries.R.layout.result;
+
+
 public class MainActivity extends AppCompatActivity {
 
     public CustomDialog alert;
@@ -87,6 +90,13 @@ public class MainActivity extends AppCompatActivity {
 
         alert = new CustomDialog();
         alert.showDialog(MainActivity.this);
+
+        alert.setDialogResult(new CustomDialog.OnMyDialogResult() {
+            @Override
+            public void finish(String result) {
+                name = result;
+            }
+        });
 
         loadingImage();
 
@@ -276,24 +286,24 @@ public class MainActivity extends AppCompatActivity {
     //check answer from question 5
     public void checkQ5(View view) {
         answerList.add(5,"");
-        String value = " ";
+        String value = "";
         if(checkBox1Q5.isChecked()){
-            value += checkBox1Q5.getText().toString();
+            value = value + checkBox1Q5.getText().toString() + ",";
         }
         if(checkBox2Q5.isChecked()){
-            value += checkBox2Q5.getText().toString();
+            value = value + checkBox2Q5.getText().toString() + ",";
         }
-        if(checkBox1Q5.isChecked()){
-            value += checkBox3Q5.getText().toString();
+        if(checkBox3Q5.isChecked()){
+            value = value + checkBox3Q5.getText().toString() + ",";
         }
-        if(checkBox1Q5.isChecked()){
-            value += checkBox4Q5.getText().toString();
+        if(checkBox4Q5.isChecked()){
+            value = value + checkBox4Q5.getText().toString() + ",";
         }
         if (checkBox2Q5.isChecked() && checkBox3Q5.isChecked()) {
             q5 = true;
-            value = checkBox2Q5.getText().toString().concat(" " + checkBox3Q5.getText().toString());
             count++;
         }
+        value = value.substring(0, value.length());
         answerList.set(5, value);
     }
 
@@ -350,22 +360,22 @@ public class MainActivity extends AppCompatActivity {
         String value = " ";
         answerList.add(8,"");
         if(checkBox1Q8.isChecked()){
-            value += checkBox1Q8.getText().toString();
+            value = value + checkBox1Q8.getText().toString() + ",";
         }
         if(checkBox2Q8.isChecked()){
-            value += checkBox2Q8.getText().toString();
+            value = value + checkBox2Q8.getText().toString() + ",";
         }
-        if(checkBox1Q8.isChecked()){
-            value += checkBox3Q8.getText().toString();
+        if(checkBox3Q8.isChecked()){
+            value = value + checkBox3Q8.getText().toString() + ",";
         }
-        if(checkBox1Q8.isChecked()){
-            value += checkBox4Q8.getText().toString();
+        if(checkBox4Q8.isChecked()){
+            value = value + checkBox4Q8.getText().toString() + ",";
         }
         if (checkBox1Q8.isChecked() && checkBox1Q8.isChecked()) {
             q8 = true;
-            value = checkBox1Q8.getText().toString().concat(" " + checkBox2Q8.getText().toString());
             count++;
         }
+        value = value.substring(0, value.length());
         answerList.set(8, value);
     }
 

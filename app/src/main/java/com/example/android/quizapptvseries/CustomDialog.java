@@ -13,6 +13,7 @@ import android.widget.EditText;
 public class CustomDialog extends Activity{
 
     String name;
+    OnMyDialogResult mDialogResult;
 
     public void showDialog(Activity activity){
         // Create custom dialog object
@@ -32,6 +33,7 @@ public class CustomDialog extends Activity{
             public void onClick(View v) {
                 // Close dialog
                 name = yourName.getText().toString();
+                mDialogResult.finish(String.valueOf(name));
                 dialog.dismiss();
             }
         });
@@ -46,5 +48,13 @@ public class CustomDialog extends Activity{
         lp.width = WindowManager.LayoutParams.MATCH_PARENT;
         lp.height = WindowManager.LayoutParams.WRAP_CONTENT;
         window.setAttributes(lp);
+    }
+
+    public interface OnMyDialogResult{
+        void finish(String result);
+    }
+
+    public void setDialogResult(OnMyDialogResult dialogResult){
+        mDialogResult = dialogResult;
     }
 }
