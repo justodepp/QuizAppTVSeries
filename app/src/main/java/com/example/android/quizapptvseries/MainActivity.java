@@ -80,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
         outState.putBoolean("q8",q8);
         outState.putBoolean("q9",q9);
         outState.putBoolean("q10",q10);
+        loadingImage();
     }
 
     //initialize all needed obj
