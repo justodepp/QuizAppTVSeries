@@ -73,6 +73,7 @@
             <item name="android:text">@string/btn_grading</item>
         </style>
         <style name="btn_result">
+            <item name="android:layout_marginTop">@dimen/c_hbottom</item>
             <item name="android:textSize">@dimen/text_question_size</item>
             <item name="android:text">@string/btn_grading</item>
             <item name="android:background">@color/colorControlActivated</item>
