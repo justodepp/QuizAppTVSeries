@@ -4,5 +4,10 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
+    <color name="colorControlNormal">#d32f2f</color>
+    <color name="colorControlActivated">#F44336</color>
+    <color name="colorControlHighlight">#FF5722</color>
+
+
     <color name="backgroundQuestion">#99000000</color>
 </resources>

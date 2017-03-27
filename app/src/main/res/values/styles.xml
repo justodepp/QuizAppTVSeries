@@ -3,9 +3,12 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorControlActivated</item>
+        <item name="colorPrimaryDark">@color/colorControlNormal</item>
+        <item name="colorAccent">@color/colorControlHighlight</item>
+
+        <item name="colorControlNormal">@color/colorControlNormal</item>
+        <item name="colorControlActivated">@color/colorControlActivated</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
@@ -69,9 +72,15 @@
             <item name="android:textSize">@dimen/t_size2</item>
             <item name="android:text">@string/btn_grading</item>
         </style>
-        <style name="btn_result" parent="std_layout">
+        <style name="btn_result">
             <item name="android:textSize">@dimen/text_question_size</item>
             <item name="android:text">@string/btn_grading</item>
+            <item name="android:background">@color/colorControlActivated</item>
+            <item name="android:textColor">@android:color/white</item>
+            <item name="android:layout_width">wrap_content</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:padding">@dimen/text_question_padding</item>
+            <item name="android:layout_gravity">center</item>
         </style>
     <!-- CHECK -->
         <style name="text_row">

@@ -86,6 +86,8 @@
                     android:layout_margin="@dimen/margin_radio">
 
                     <EditText
+                        android:maxLines="1"
+                        android:inputType="text"
                         android:id="@+id/editTextQ2"
                         style="@style/std_layout"
                         android:hint="@string/hint_name" />
@@ -407,6 +409,8 @@
                     android:layout_margin="@dimen/margin_radio"
                     style="@style/std_layout">
                     <EditText
+                        android:maxLines="1"
+                        android:inputType="number"
                         android:id="@+id/editTextQ9"
                         style="@style/std_layout"
                         android:hint="@string/hint_number"/>
