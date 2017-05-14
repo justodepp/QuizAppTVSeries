@@ -372,7 +372,7 @@ public class MainActivity extends AppCompatActivity {
         if(checkBox4Q8.isChecked()){
             value = value + checkBox4Q8.getText().toString() + ",";
         }
-        if (checkBox1Q8.isChecked() && checkBox1Q8.isChecked()) {
+        if ((checkBox1Q8.isChecked() && checkBox3Q8.isChecked()) && (!checkBox2Q8.isChecked() || !checkBox4Q8.isChecked())) {
             q8 = true;
             count++;
         }
