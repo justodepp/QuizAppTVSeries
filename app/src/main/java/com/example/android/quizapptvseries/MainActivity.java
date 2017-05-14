@@ -300,7 +300,7 @@ public class MainActivity extends AppCompatActivity {
         if(checkBox4Q5.isChecked()){
             value = value + checkBox4Q5.getText().toString() + ",";
         }
-        if (checkBox2Q5.isChecked() && checkBox3Q5.isChecked()) {
+        if ((checkBox2Q5.isChecked() && checkBox3Q5.isChecked()) && (!checkBox1Q5.isChecked() || !checkBox4Q5.isChecked())) {
             q5 = true;
             count++;
         }
